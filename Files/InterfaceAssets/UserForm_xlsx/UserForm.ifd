@@ -1,0 +1,73 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "UserForm",
+  "name": "UserForm",
+  "version": "1.0",
+  "protocol": "excel",
+  "baseUrl": null,
+  "basePath": "",
+  "auth": {},
+  "dependencies": [
+    "UserForm.xlsx"
+  ],
+  "schemas": {
+    "Sheet1": {
+      "id": "Sheet1",
+      "type": "object",
+      "properties": {
+        "Rows": {
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "Sheet1.Row"
+          },
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "Sheet1.Row": {
+      "id": "Sheet1.Row",
+      "type": "object",
+      "properties": {
+        "Email": {
+          "id": "Sheet1.Row.Email",
+          "type": "string",
+          "description": "Email column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "Comments": {
+          "id": "Sheet1.Row.Comments",
+          "type": "string",
+          "description": "Comments column",
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    }
+  },
+  "resources": {
+    "Sheet1": {
+      "isInterfaceAsset": true,
+      "icon": "excel_icon.png"
+    },
+    "Sheet1.Row": {
+      "icon": "excel_icon.png"
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "INGWA-2-PC",
+      "data": "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",
+      "key": "kD+ZbON6ngJV7Qbw4jYqoAe2GJk452UwcsrBIBzo7kaPZjSo6sw5KhDEMWGqLqakszXrEqjupP6zdg2v79iQ6/A6Vcez33dU7cSmnb9ScetI7Vu/lNTwG/vzgHnbYLvlqKhMnXZdWEjSgjJmx96GAUsijN9+negfuIxqFRRiBF70bmT60TALdxiH4cIh/zHVauPIQiBhOjS89R4UD80TN1aeNpXL5daEgi7LITCitAXqf9gQH+w1v7bGDkQna7Ciwus0RidTs9Evd9N3y7Wul2CESnyBiS/9ziXfrF9C0g+qj0gr4oP+Vd9qXvvEKmkZNvexlg9cfcJ4pVQaSWqxwA==",
+      "iv": "iaiLuf6gtXejskXfEbqOB2Gh+cnhndWprdTGKeffqyZeLOf6tnWqw/A47rd0+OS6CoJ5taEOMBOvswD7iDNJlyP4RGLWG0gIKGslZi21ylxB7DVGK3HreF++ERBUYF2w6i2byV/UeDAiiGRB/7bnmL6aukdxWvISaMCUAi//LduBELFhYCWxQZRmMl/z8dTQ/DbOI3XP7DRlCKYXXE54iA4a8cT1OBiZ7GMWVhubTWq6tAhZQaGCr/B4KshzdM58dJ8FANtBa7aRdwT2yTuiPDOk75mNeyi1iOrA2OJr4oR8Xtt8CSz3YeXERLkHpLwJL4Xy+Zdm0EFEOkQD75+E9g=="
+    }
+  }
+}

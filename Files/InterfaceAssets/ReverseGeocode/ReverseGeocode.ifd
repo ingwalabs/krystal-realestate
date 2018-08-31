@@ -1,0 +1,190 @@
+{
+  "kind": "discovery#jsDescription",
+  "discoveryVersion": "v1",
+  "id": "ReverseGeocode:v1",
+  "name": "ReverseGeocode",
+  "if.category": "Google Geocoding",
+  "version": "v1.2",
+  "title": "ReverseGeocode",
+  "description": "Get address of given coordinates",
+  "protocol": "js",
+  "basePath": "ReverseGeocode",
+  "if.dependencies": [
+    "EventEmitter.js",
+    "Abstract_InterfaceAsset.js",
+    "ReverseGeocode.js",
+    "GeoErrorHandler.js",
+    "GeoLanguageHandler.js",
+    "AdditionalInformation.js"
+  ],
+  "icons": {
+    "x32": "icon_reverse_geocode_32.png"
+  },
+  "schemas": {
+    "ReverseGeocode": {
+      "id": "ReverseGeocode",
+      "type": "object",
+      "properties": {
+        "language": {
+          "type": "string",
+          "title": "Output language",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "English",
+            "French",
+            "German",
+            "Italian",
+            "Spanish",
+            "Dutch"
+          ]
+        },
+        "additionalInformation": {
+          "readonly": true,
+          "title": "Additional Information",
+          "type": "object",
+          "properties": {
+            "country": {
+              "title": "Country",
+              "type": "string",
+              "default": ""
+            },
+            "locality": {
+              "title": "City",
+              "type": "string",
+              "default": ""
+            },
+            "sublocality": {
+              "title": "Neighborhood",
+              "type": "string",
+              "default": ""
+            },
+            "administrativeAreaLvl1": {
+              "title": "State/Province",
+              "type": "string",
+              "default": ""
+            },
+            "administrativeAreaLvl2": {
+              "title": "County",
+              "type": "string",
+              "default": ""
+            },
+            "postalCode": {
+              "title": "Postal code",
+              "type": "string",
+              "default": ""
+            },
+            "streetNumber": {
+              "title": "Street number",
+              "type": "string",
+              "default": ""
+            },
+            "route": {
+              "title": "Street name",
+              "type": "string",
+              "default": ""
+            }
+          }
+        },
+        "latitude": {
+          "type": "number",
+          "title": "Latitude",
+          "default": 51.50418
+        },
+        "longitude": {
+          "type": "number",
+          "title": "Longitude",
+          "default": -0.0763221
+        },
+        "formattedAddress": {
+          "readonly": true,
+          "title": "Output address",
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+  },
+  "resources": {
+    "ReverseGeocode": {
+      "id": "ReverseGeocode",
+      "if.interfaceAsset": true,
+      "if.templateDesignAccelerator": "ReverseGeocode-DA.dax",
+      "title": "Coordinates to address",
+      "description": "Converts latitude/longitude into an address.",
+      "methods": {
+        "_getResultAndAdditionalInformation": {
+          "id": "ReverseGeocode._getResultAndAdditionalInformation",
+          "path": "_getResultAndAdditionalInformation",
+          "description": "Gets address for the given coordinates.",
+          "title": "Find address",
+          "parameters": {
+            "lat": {
+              "type": "number",
+              "default": 51.50418,
+              "title": "Latitude"
+            },
+            "lng": {
+              "type": "number",
+              "default": -0.0763221,
+              "title": "Longitude"
+            }
+          },
+          "response": {
+            "$ref": "none"
+          }
+        }
+      },
+      "events": {
+        "addressFound": {
+          "id": "addressFound",
+          "title": "Address found",
+          "if.category": "Coordinates to address",
+          "properties": {
+            "latitude": {
+              "type": "number",
+              "title": "Latitude"
+            },
+            "longitude": {
+              "type": "number",
+              "title": "Longitude"
+            },
+            "address": {
+              "type": "string",
+              "title": "Address"
+            }
+          }
+        },
+        "addressNotFound": {
+          "id": "addressNotFound",
+          "title": "Address not found",
+          "if.category": "Coordinates to address",
+          "properties": {
+            "error": {
+              "type": "string",
+              "title": "Error message"
+            },
+            "latitude": {
+              "type": "number",
+              "title": "Latitude"
+            },
+            "longitude": {
+              "type": "number",
+              "title": "Longitude"
+            }
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "PLATANE",
+      "data": "6tgVBBgGSXvvp16Es1itQ/C71I+O0nLdoEHWb/dxtGIibIk/SxT1qDwmF8uljxmS0HwBcQTKrGhXzHxA/Isr8sWj5UFPVKRfZNOjiBgZxYM4f6ZjDkohmPqoX8QGkTOo81GlTUm7ZQmyA3MuNZvg3X3PM3QG3F/vWPVI19HzhJ8VBFZ4DqzSMQ8eWzRbB1Yivmzk49daPvGIR1lzkjeJ3z4c6Qm4Grr0HxMrt2DoWK4rLpJkvEAt+kr3PzhQRHgkkQrBToBSCQ/mbQRw/c4H97III0qbTO6mEoj39geUZR9o/W6DNSh1Ejs0dGYWwbQCuqyk8m+dNqX2vOyCbmamCWnpA2AQEjiCT9vEjV1OKHCuHThVs6gfANdaZWbX8FeTDVUA0p87TAA6+edbATK4Z9IshDl784KxZQ2Hx6Ktn/1eDDzmHX9+LNR9OMfBbjHQPigsbDUUUiBDp7uAy8uspEU+HeDdVmSlB279jZ18cXRGaoqDQN2VVONM+0GPg5PMO6EWhi7MyCB0ISVYVjwGx92xYEQ5fsO2KB7XzkAXqewR5are17ni4Ia1/xz+Y/YcBW43JfpposOoJqCi5a70apn+9fz0NPUz24aoVwEBttXazn/GJLDyQvblxKjwvNGuGf/o1bciYLGpJ5MKlk/K/yznqdbWYK1xnqC4Q+GPX84X2sm7WR5odCXBmFpoGoOnBo4pIs2UeGWk4+r68BfqkfXBtWLcX3VhmrAH/SFXcmwf+Yy2uCbiGVdgYbdFBhoNJOMfhno+/cA8/YQDSuwF4Xzbqxq0rae6P+cYijjV/jNsrybIIY7m+3Psy5bE6xyU1nqz+iUqXK+R4iTtL19VytZKlyjp/y5KKabqAnKrNq58jOZrQVQapqu340bbrG6vB/FwYzn8VnpKs+a/vcF+PjdqgXt3ev7FNklpQaqzdqOVbnUQiJ+hQFVQ2aE3N5r3wMXYn94CoAiYSO8hUQHk9UMk7RMk+uaIwGNS5V6u51OQxWy/8nOKAifo+umdRixQA3itsSbHeZYFcXnlLhow3+38T0RtDsTT8ra1pnLdjIQWQw/lTjNYcN1bDHq5L16i8dbT+zFiZe28v9PLjDkjIjdwp5r64tTWYaHDOOuFluG5tPMdlXxSBWihPxUgJ2xUpvMWzif5BXUUoyCPNCF+lqn8YoPVicMrG4Sj0QAodmdhsROOkSbjD7Joc0NhaC7morLwMffL80qZ7Bn1duyAMq73WrlIYBACnXBjE8XWtSPNQQxe/11L15ZNcblIg5SBItmRRLR6CDBMa1XDISPjH/zO/94++o83Y3VZTunHi0yhFRu6c8EMcRsVn+mq5Urve6s3j8vYDA1cifaRTdUcZVu0/PafFHADbRj/5E+5hBIIgYhan1tBHblcGbKkIcXyyf8r8kQe2Y7DrzKalzo1V6dcGNGWstCz26x7P9l81Hq8iG5fBIetqnsGrEnsjtaOk7ajkrRnj3wIMvwtCofJXSnn4jBZIw3O7XffbUdkwjyqV54CqfB3Ggqw9pvrqhAo2FyWytlZF+p+nvHKYHdkMwylWN62sMVfghEYKJzhVch4TMhZB4LGIQ+K0YkI+b/bt4/sNMiS7tdUc1htKj/lXT9yPMFkduSnK/lGiOcGlW4e3Wvz0Q1eGs105IaOqcWDAuNUC1CNaSxwNBv/BUvkubS4cU9xpmgTtFJGZFSDYovEfrjyLprGclwMjd9PTq63uIiRM57s2K4tX0V0wG0lf7PsvCZybq7UGM8a3d9ixSN9Z2caH+cY7vSIwcm5v3Hr/1YnF5tXNKCbFEBHUsHaV+eCeE+swAK+z+v72z3Z5ROJyhWfvnQvGuthxcmKEzuhZuJ3kpCOagaCReyXNSZjR5MKlO8R3d5jRV5Zd3GSgPY=",
+      "key": "pWDv5URD2Tg9S+TGLQ/KzKX3+UyYT/PkTCoasyuwrJCp+TJlzFxhdArlcq3aBoVEggAvAkXXn8WUXZmd4tNiv8xSVstQ0e8Cqq8juKZIgQSjX9SOfzKHvQXh/GW2YDX/usrD+9DQHKzKvqk/7lC4PV3aqkx6mQsVO5ne+kVYFJ1dK09tDIZo2Zp/nIsLFGDUko10REm048vEN9beM046tNEZBo7bePqWrisgwFjo7/KGUQ9JR9FXNzRxtab9df+SDO/rNofYmU2SOMa8BullTrgnTH0NUep/mq4NDlw3ELbomOnzY194u5Ewj/A0ZB8uSo5EMD5xCj7s6+okCEMrHg==",
+      "iv": "sgnmW3DMXPCPKDg6VFgftF1G8IIdkFkx5u9o1SpphItFbz3D6ESeVGlGJeO67p4Xpgbt2tlX/uqiyJuamir3fGZFKwXmrpRLLYiV6hBzz2Xt3DX+sBFrzmKfOP211kVMbohwkgNxOKLPardPcDwS+fIZgV8U1fVAngGmpUm5fhjzowiuRoeGiAYlakGkAvbW0fJWkdi3eCqTnlsMbcy9x0Gk9ykuv1slFlNf7KtyFwzuYffRSTbL+XVwKnHRZ6dzSnZMrSH3V6a3/OmH+GyB0JYESG5jid6MZEZfPWwVXYi27AkWZllbJa/5qRWYKaqqJemiDrRUnfXSDlY101cahw=="
+    }
+  }
+}

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="10" Name="ReverseGeocode-DA" Description="ReverseGeocode-DA" Category="Map" Author="IntuiLab S.A" AuthorId="IntuiLab" Icon="ReverseGeocode-DA.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="26280">
+  <MashupCollection Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/DA06Oct/Reverse Géocode/Middle/Default_template_for_ReverseGeocode">
+    <Collection Name="Default_template_for_ReverseGeocode" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+        <Property Type="Visual" Name="ItemHeight"><![CDATA[value:300]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:700]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:700]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:700]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:700]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:449]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:437]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D0D0D0]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:700]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:700]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:350]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:350]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Address found Group" Visual="Group" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="Width"><![CDATA[value:650]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:650]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:80]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:80]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:350]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:43]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="icon_DA-map" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+          <Properties>
+            <Property Type="Domain" Name="Source"><![CDATA[player://resources/c22ab2ce-258c-41e9-8cc1-7e94afb2ad45]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:24]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:12]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:40]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Address label" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Reverse%20Geocode%20Hybrid/formattedAddress]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:623]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:338]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:40]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Collection Name="Address not found Group" Visual="Group" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="Width"><![CDATA[value:650]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:650]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:80]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:80]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:350]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:43]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+        </Properties>
+        <Asset Name="No result label" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:324]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:649]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:40]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:80]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:No result]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Collection Name="Map" Visual="Map" Style="" Container="Default" ContainerStyle="">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Tapped">
+            <InvokeService Target="mashup://externals/Reverse%20Geocode%20Hybrid/" Type="Domain" Name="_getResultAndAdditionalInformation" Delay="value:0">
+              <ServiceArgumentParameter ParamName="lat" ArgumentName="Latitude" />
+              <ServiceArgumentParameter ParamName="lng" ArgumentName="Longitude" />
+            </InvokeService>
+          </EventTrigger>
+          <EventTrigger EventType="Visual" EventName="DoubleTapped">
+            <InvokeService Target="mashup://externals/Reverse%20Geocode%20Hybrid/" Type="Domain" Name="_getResultAndAdditionalInformation" Delay="value:0">
+              <ServiceArgumentParameter ParamName="lat" ArgumentName="Latitude" />
+              <ServiceArgumentParameter ParamName="lng" ArgumentName="Longitude" />
+            </InvokeService>
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="MapProvider"><![CDATA[value:MapQuest]]></Property>
+          <Property Type="Visual" Name="ShowIcons"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="DisplayMode"><![CDATA[value:Map]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:380]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:588]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:650]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:350]]></Property>
+          <Property Type="Visual" Name="Longitude"><![CDATA[value:-0.0763221]]></Property>
+          <Property Type="Visual" Name="Latitude"><![CDATA[value:51.50418]]></Property>
+          <Property Type="Visual" Name="Zoom"><![CDATA[value:13]]></Property>
+        </Properties>
+        <Collection Name="Pushpin Group" Visual="Group" Style="" Container="Static" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:300]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:365]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:100]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:112]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:112]]></Property>
+            <Property Type="Container" Name="Latitude"><![CDATA[mashup://externals/Reverse%20Geocode%20Hybrid/latitude]]></Property>
+            <Property Type="Container" Name="Longitude"><![CDATA[mashup://externals/Reverse%20Geocode%20Hybrid/longitude]]></Property>
+          </Properties>
+          <Asset Name="PushPin Image" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/c22ab2ce-258c-41e9-8cc1-7e94afb2ad45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:56]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:48]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:28]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+      </Collection>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Reverse Geocode Hybrid" DescriptorPath="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd" ExternalAssetName="ReverseGeocode">
+      <Attachments>
+        <EventTrigger EventType="Domain" EventName="addressFound">
+          <InvokeService Target="mashup://visuals/mashup_root_0/Default_template_for_ReverseGeocode/Address%20found%20Group/Address%20label/" Type="Domain" Name="SetText" Delay="value:0">
+            <ServiceArgumentParameter ParamName="value" ArgumentName="address" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_0/Default_template_for_ReverseGeocode/Address%20found%20Group/" Type="Container" Name="Show" Delay="value:0">
+            <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+            <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+            <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+            <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+            <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+            <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+            <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_0/Default_template_for_ReverseGeocode/Address%20not%20found%20Group/" Type="Container" Name="Hide" Delay="value:0">
+            <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+            <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+            <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+            <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+            <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+            <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+            <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="addressNotFound">
+          <InvokeService Target="mashup://visuals/mashup_root_0/Default_template_for_ReverseGeocode/Address%20not%20found%20Group/" Type="Container" Name="Show" Delay="value:0">
+            <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+            <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+            <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+            <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+            <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+            <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+            <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_0/Default_template_for_ReverseGeocode/Address%20found%20Group/" Type="Container" Name="Hide" Delay="value:0">
+            <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+            <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+            <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+            <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+            <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+            <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+            <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+      </Attachments>
+      <Properties>
+        <Property Type="Domain" Name="latitude"><![CDATA[value:51.50546]]></Property>
+        <Property Type="Domain" Name="longitude"><![CDATA[value:-0.0753565]]></Property>
+      </Properties>
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd" Length="6411" LastModificationDate="2014-09-24T14:10:00.3870837Z" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/EventEmitter.js" Length="16480" LastModificationDate="2014-09-24T14:10:00.3880838Z" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Abstract_InterfaceAsset.js" Length="478" LastModificationDate="2014-09-24T14:10:00.3980843Z" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.js" Length="4761" LastModificationDate="2014-09-24T14:10:00.3950842Z" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/GeoErrorHandler.js" Length="700" LastModificationDate="2014-09-24T14:10:00.3960842Z" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/GeoLanguageHandler.js" Length="492" LastModificationDate="2014-09-24T14:10:00.3900839Z" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/AdditionalInformation.js" Length="1404" LastModificationDate="2014-09-24T14:10:00.3910839Z" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="c22ab2ce-258c-41e9-8cc1-7e94afb2ad45" Type="uri" Length="1391" LastModificationDate="2014-10-07T15:23:11.8060111Z" DefaultValue="player://data/Images/icon_DA-map.png" />
+  </MashupResource>
+</Mashup>
