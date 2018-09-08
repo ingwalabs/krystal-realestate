@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="krystal-realestate" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b979f121-6a4a-4861-81ab-24c919b4ed53" OriginalId="1-022f7010-14e8-4420-bdf3-de26625b01b9" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2018-09-08T07:39:14.6084066Z" SnapshotPath="player://data/Snapshots/default.png">
+<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="krystal-realestate" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b979f121-6a4a-4861-81ab-24c919b4ed53" OriginalId="1-022f7010-14e8-4420-bdf3-de26625b01b9" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2018-09-08T11:11:41.8766435Z" SnapshotPath="player://data/Snapshots/default.png">
   <ComposerExtensions>
     <Extension Name="HasActionTargetTreeBeenManipulated" Value="true" />
     <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
@@ -47,8 +47,8 @@
           <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
           <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
           <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
-          <Property Type="Container" Name="X"><![CDATA[value:79]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:48]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:41]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:41]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:82]]></Property>
           <Property Type="Container" Name="Height"><![CDATA[value:82]]></Property>
           <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -225,7 +225,7 @@ Start]]></Property>
         </Asset>
       </Layer>
     </Space>
-    <Space Name="Projects" AutoReset="false" BackgroundColor="#FF000000">
+    <Space Name="Projects" AutoReset="false">
       <ComposerExtensions>
         <Extension Name="Notifications" Value="">
           <ComplexAttributes>
@@ -233,10 +233,10 @@ Start]]></Property>
             <Attribute Key="680ae981-29a8-4397-944d-076842296501" Value="False" />
           </ComplexAttributes>
         </Extension>
-        <Extension Name="TranslateXOnScene" Value="-944.157382330181" />
-        <Extension Name="ViewPortXOnScene" Value="2245.36347808138" />
-        <Extension Name="ViewPortYOnScene" Value="2785.20618664137" />
-        <Extension Name="TranslateYOnScene" Value="-827.118593168542" />
+        <Extension Name="TranslateYOnScene" Value="-467.172928439345" />
+        <Extension Name="ViewPortXOnScene" Value="1727.31150025172" />
+        <Extension Name="ViewPortYOnScene" Value="2142.60128648245" />
+        <Extension Name="TranslateXOnScene" Value="-399.863364123976" />
       </ComposerExtensions>
       <Properties>
         <Property Type="Visual" Name="BackgroundEffects">
@@ -246,11 +246,6 @@ Start]]></Property>
         </Property>
         <Property Type="Visual" Name="UseExperienceKeyboardStyle"><![CDATA[value:False]]></Property>
       </Properties>
-      <BackgroundAsset Name="Projects-Background" Uri="player://resources/6baa612c-792c-486b-bd95-b16ddcdf80b1">
-        <Properties>
-          <Property Type="Visual" Name="DisplayFillBehavior"><![CDATA[value:Fit]]></Property>
-        </Properties>
-      </BackgroundAsset>
       <Layer Name="Layer 1" Visual="Pinboard" LayerType="Default">
         <ComposerExtensions>
           <Extension Name="IsExpanded" Value="True" />
@@ -371,6 +366,9 @@ Start]]></Property>
           </Asset>
         </Collection>
         <Asset Name="PROJECTS" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
+          <ComposerExtensions>
+            <Extension Name="IsLocked" Value="True" />
+          </ComposerExtensions>
           <Properties>
             <Property Type="Domain" Name="Text"><![CDATA[value:PROJECTS]]></Property>
             <Property Type="Visual" Name="Font">
@@ -397,6 +395,7 @@ Start]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:283]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:107]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
           </Properties>
         </Asset>
         <Asset Name="Next-icon" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
@@ -429,6 +428,7 @@ Start]]></Property>
             <Extension Name="IsExpanded" Value="True" />
             <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
             <Extension Name="IsExpandedInBindingViews" Value="True" />
+            <Extension Name="IsLocked" Value="True" />
           </ComposerExtensions>
           <Properties>
             <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
@@ -457,6 +457,7 @@ Start]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:1200]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:600]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
           </Properties>
           <Asset Name="LAPALOMA" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
             <Attachments>
@@ -589,6 +590,195 @@ Start]]></Property>
             </Properties>
           </Asset>
         </Collection>
+        <Collection Name="Scroll" Visual="ScrollableGroupCollection" Style="" Container="Static" ContainerStyle="">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="True" />
+            <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+            <Extension Name="IsLocked" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="ExtendedWidth"><![CDATA[value:3840]]></Property>
+            <Property Type="Visual" Name="ExtendedHeight"><![CDATA[value:1080]]></Property>
+            <Property Type="Visual" Name="OriginPointX"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="ScrollViewerHorizontalOffset"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="ShowItemLoadingImage"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="Effects">
+              <EffectsCollection>
+                <Grayscale Factor="5" />
+              </EffectsCollection>
+            </Property>
+            <Property Type="Container" Name="Opacity"><![CDATA[value:1]]></Property>
+          </Properties>
+          <Asset Name="Projects222 1" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+            <ComposerExtensions>
+              <Extension Name="IsLocked" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/17430d2a-e0d6-428a-a7df-fc0cfe7eca2b]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:2880]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Projects222" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+            <ComposerExtensions>
+              <Extension Name="IsLocked" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/17430d2a-e0d6-428a-a7df-fc0cfe7eca2b]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Rectangle 1" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+            <Attachments>
+              <EventTrigger EventType="Visual" EventName="Tapped">
+                <Navigate Type="Normal" Delay="value:0">
+                  <ServiceValueParameter ParamName="Target" Value="player://visuals/krystal-realestate/Project2/" />
+                  <Transition>
+                    <ZoomInTransition Duration="00:00:00.3000000" />
+                  </Transition>
+                </Navigate>
+              </EventTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:385]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:523]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:459]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:74]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-1]]></Property>
+              <Property Type="Container" Name="Opacity"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Rectangle 2" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+            <Attachments>
+              <EventTrigger EventType="Visual" EventName="Tapped">
+                <Navigate Type="Normal" Delay="value:0">
+                  <ServiceValueParameter ParamName="Target" Value="player://visuals/krystal-realestate/Project3/" />
+                  <Transition>
+                    <ZoomInTransition Duration="00:00:00.3000000" />
+                  </Transition>
+                </Navigate>
+              </EventTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:955]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:523]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:377]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:82]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Opacity"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Asset Name="Rectangle" Visual="DefaultRectangle" Style="" Container="Static" ContainerStyle="" Domain="value:Rectangle">
+          <Properties>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+            <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF827C7C]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:1042]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:300]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:103]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Opacity"><![CDATA[value:0.66]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="PROJECTS 1" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
+          <ComposerExtensions>
+            <Extension Name="IsLocked" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value:PROJECTS]]></Property>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:55]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:1058]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:82]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:300]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:300]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Projects111" Visual="DefaultImage" Style="" Container="Static" ContainerStyle="" Domain="value:Image">
+          <ComposerExtensions>
+            <Extension Name="IsLocked" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Domain" Name="Source"><![CDATA[player://resources/1e3a8fb8-0d2a-4c2a-a0ee-e35edfe52226]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Visual" Name="Effects">
+              <EffectsCollection>
+                <Sepia Factor="4" />
+              </EffectsCollection>
+            </Property>
+            <Property Type="Visual" Name="DisplayFillBehavior"><![CDATA[value:Fill]]></Property>
+            <Property Type="Visual" Name="ShowDrawingLabel"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+          </Properties>
+        </Asset>
       </Layer>
     </Space>
     <Space Name="Project3" AutoReset="true" BackgroundColor="#FF000000">
@@ -1440,9 +1630,9 @@ Mr. Srivardhan is a graduate in business management with experience in manufactu
           </ComplexAttributes>
         </Extension>
         <Extension Name="TranslateXOnScene" Value="-794.345692696691" />
-        <Extension Name="TranslateYOnScene" Value="-692.327447289525" />
-        <Extension Name="ViewPortXOnScene" Value="380.464285947637" />
-        <Extension Name="ViewPortYOnScene" Value="471.937614271218" />
+        <Extension Name="ViewPortXOnScene" Value="1685.68917137382" />
+        <Extension Name="ViewPortYOnScene" Value="2090.97188704455" />
+        <Extension Name="TranslateYOnScene" Value="-380.823783113525" />
       </ComposerExtensions>
       <BackgroundAsset Name="About Builders-Background" Uri="player://resources/b115086e-e327-4b32-86ef-c4e9001049ef">
         <Properties>
@@ -1925,6 +2115,7 @@ To create niche for ourself in the Real-Estate industry
             <Extension Name="IsExpanded" Value="True" />
             <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
             <Extension Name="IsExpandedInBindingViews" Value="True" />
+            <Extension Name="IsLocked" Value="False" />
           </ComposerExtensions>
           <Properties>
             <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
@@ -1937,16 +2128,20 @@ To create niche for ourself in the Real-Estate industry
             <Property Type="Visual" Name="SelectedIndex"><![CDATA[value:3]]></Property>
             <Property Type="Visual" Name="CurtainAperture"><![CDATA[value:430]]></Property>
             <Property Type="Visual" Name="WingSpan"><![CDATA[value:1.7]]></Property>
-            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:500]]></Property>
-            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:500]]></Property>
             <Property Type="Visual" Name="MaxVisibleItems"><![CDATA[value:3]]></Property>
             <Property Type="Visual" Name="ShowControls"><![CDATA[value:False]]></Property>
             <Property Type="Visual" Name="ShowScrollIndicator"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="ShowItemLoadingImage"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="InitialRecenterTime"><![CDATA[value:4.3]]></Property>
             <Property Type="Container" Name="X"><![CDATA[value:896]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:592]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:1792]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:600]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:500]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:500]]></Property>
+            <Property Type="Visual" Name="IsDragDropEnabled"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="IsTapEnabled"><![CDATA[value:True]]></Property>
           </Properties>
           <Asset Name="About US" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
             <Attachments>
@@ -2642,9 +2837,9 @@ To create niche for ourself in the Real-Estate industry
           </ComplexAttributes>
         </Extension>
         <Extension Name="TranslateXOnScene" Value="-1115.79469512963" />
-        <Extension Name="TranslateYOnScene" Value="-396.976089671043" />
         <Extension Name="ViewPortXOnScene" Value="1421.62319637693" />
         <Extension Name="ViewPortYOnScene" Value="1473.05674183196" />
+        <Extension Name="TranslateYOnScene" Value="-614.756664435168" />
       </ComposerExtensions>
       <Properties>
         <Property Type="Visual" Name="BackgroundEffects">
@@ -3286,6 +3481,16 @@ To create niche for ourself in the Real-Estate industry
                   <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                   <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                 </InvokeService>
+                <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Video%201/" Type="Container" Name="Hide" Delay="value:0">
+                  <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+                  <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                </InvokeService>
               </EventTrigger>
               <EventTrigger EventType="Visual" EventName="Tapped">
                 <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Slide%20Show/" Type="Container" Name="SetOpacity" Delay="value:0">
@@ -3479,6 +3684,16 @@ To create niche for ourself in the Real-Estate industry
                   <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                   <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                 </InvokeService>
+                <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Video%201/" Type="Container" Name="Hide" Delay="value:0">
+                  <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+                  <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                </InvokeService>
               </EventTrigger>
             </Attachments>
             <Properties>
@@ -3652,6 +3867,16 @@ To create niche for ourself in the Real-Estate industry
                   <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                   <ServiceValueParameter ParamName="dOpacity" Value="value:0" />
                 </InvokeService>
+                <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Video%201/" Type="Container" Name="Hide" Delay="value:0">
+                  <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+                  <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                </InvokeService>
               </EventTrigger>
             </Attachments>
             <Properties>
@@ -3798,6 +4023,16 @@ To create niche for ourself in the Real-Estate industry
                   <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                 </InvokeService>
                 <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/menu%20floor1/" Type="Container" Name="Hide" Delay="value:0">
+                  <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+                  <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                </InvokeService>
+                <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Video%201/" Type="Container" Name="Hide" Delay="value:0">
                   <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
                   <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
                   <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
@@ -4001,6 +4236,26 @@ To create niche for ourself in the Real-Estate industry
                   <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                   <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                   <ServiceValueParameter ParamName="dOpacity" Value="value:0" />
+                </InvokeService>
+                <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Video%201/" Type="Container" Name="Show" Delay="value:0">
+                  <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+                  <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                </InvokeService>
+                <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Video%201/" Type="Container" Name="Hide" Delay="value:0">
+                  <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+                  <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                 </InvokeService>
               </EventTrigger>
               <EventTrigger EventType="Visual" EventName="Tapped">
@@ -4845,6 +5100,9 @@ To create niche for ourself in the Real-Estate industry
           </Properties>
         </Asset>
         <Asset Name="Video 1" Visual="VlcVideo" Style="" Container="Default" ContainerStyle="" Domain="value:Video">
+          <ComposerExtensions>
+            <Extension Name="IsLocked" Value="True" />
+          </ComposerExtensions>
           <Properties>
             <Property Type="Visual" Name="GeneratedPosterFrameUri"><![CDATA[player://resources/f5605c79-97e2-4886-b224-3a8d4e186644]]></Property>
             <Property Type="Domain" Name="Source"><![CDATA[player://resources/47c03520-c8f4-4b19-a5de-8294709b3f58]]></Property>
@@ -4854,13 +5112,15 @@ To create niche for ourself in the Real-Estate industry
             <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
             <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
             <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Visual" Name="ShowVolumeController"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Autoplay"><![CDATA[value:True]]></Property>
             <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:640]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:360]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
-            <Property Type="Visual" Name="ShowVolumeController"><![CDATA[value:True]]></Property>
-            <Property Type="Visual" Name="Autoplay"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Opacity"><![CDATA[value:0.99]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
           </Properties>
         </Asset>
       </Layer>
@@ -5575,7 +5835,9 @@ To create niche for ourself in the Real-Estate industry
     </Space>
   </Spaces>
   <SharedContracts />
-  <Converters />
+  <Converters>
+    <ExternalAsset Name="Eval" DescriptorPath="player://resources/6840b1d7-76ff-4007-92d6-bb5b34382029" ExternalAssetName="EvalBC" />
+  </Converters>
   <ExternalAssets>
     <ExternalAsset Name="Sheet1" DescriptorPath="player://resources/d6f7ae01-7080-476f-9601-def177fe9a83" ExternalAssetName="Sheet1">
       <ComposerExtensions>
@@ -6388,6 +6650,18 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="019dc634-449c-4704-8225-8e9093472eaa" Type="uri" Length="289624" LastModificationDate="2018-09-08T07:17:04.8753843Z" DefaultValue="player://data/Images/Projects.jpg" />
     <Resource Key="8250074b-be15-48db-88d8-80ac355020ad" Type="uri" Length="137030" LastModificationDate="2018-09-08T07:24:50.8266798Z" DefaultValue="player://data/Images/testimonials.jpg" />
     <Resource Key="e6a50e8c-3d75-481d-99bf-ebc775a6f5a5" Type="uri" Length="162578" LastModificationDate="2018-09-08T07:28:31.9601313Z" DefaultValue="player://data/Images/Rewards.jpg" />
+    <Resource Key="e944c560-d5ee-41ee-944f-45713917788f" Type="uri" Length="57609" LastModificationDate="2018-09-08T07:51:26.8859872Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/f1611e9d.gif" />
+    <Resource Key="6840b1d7-76ff-4007-92d6-bb5b34382029" Type="uri" Length="1428" LastModificationDate="2018-07-23T17:09:28Z" DefaultValue="player://data/InterfaceAssets/EvalBC/EvalBC.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/EvalBC/EvalBC.js" Length="2652" LastModificationDate="2018-07-23T17:09:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/EvalBC/icon_eval_32.png" Length="213" LastModificationDate="2018-07-23T17:09:28Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="8d6f6941-7ee0-4b6a-a683-51f6ada50360" Type="uri" Length="541383" LastModificationDate="2018-09-08T08:23:52.8427061Z" DefaultValue="player://data/Images/fishercove.jpg" />
+    <Resource Key="ca511045-70ce-44a2-b347-68a4ffba5b45" Type="uri" Length="860470" LastModificationDate="2018-09-08T08:28:53.387889Z" DefaultValue="player://data/Images/1p.png" />
+    <Resource Key="5eb33332-899a-413a-bb33-469a39113c7d" Type="uri" Length="1198505" LastModificationDate="2018-09-08T08:39:00.7000849Z" DefaultValue="player://data/Images/11p.png" />
+    <Resource Key="1e3a8fb8-0d2a-4c2a-a0ee-e35edfe52226" Type="uri" Length="23426" LastModificationDate="2018-09-08T10:29:04.2211938Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Projects111.png" />
+    <Resource Key="17430d2a-e0d6-428a-a7df-fc0cfe7eca2b" Type="uri" Length="3297198" LastModificationDate="2018-09-08T10:34:50.657951Z" DefaultValue="player://data/Images/Projects222.png" />
   </Resources>
   <Sequence>
     <SpaceRef Space="player://visuals/krystal-realestate/Home%20Page/" />
@@ -6411,18 +6685,18 @@ To create niche for ourself in the Real-Estate industry
           <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
         </Transforms>
         <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <DigestValue>DDjsxXgJ9Yrh7psYIfbpNyKsv7g=</DigestValue>
+        <DigestValue>uiTd/TniRzLE+gmlCIljovn8fRc=</DigestValue>
       </Reference>
     </SignedInfo>
-    <SignatureValue>jTRXm9ZgSPd3JhUVvQp+gH9Apvt3xkIjvQwd6KiIHF2jktrRBg2wz+CzqbMf5d9tk4Ot5L5cEdMoBDmViQVZpBousmkvq1a08DMV0HxolARWIHcjM4QihxOe2dgzu9PzzoNcdiP5pb1X/r9f4g09I/DPIJt2AwZWL0Ax/cg0V9/yreJ/nQ/cIfno7GNLc7wTPkhCu/j675vuIMVqJ0Y9zzGRA1+QQ+wKdNdVsu8zz684X8ULhsGJk+XQJvulYVNv1euRr7tCk+6wHsxFDQ5mu4tTnNRnvT5mF0qHRdEbNqrpKzL8h3Lgh6hWKGXE1lUN0Vt7UFWLrDfYYZ+ADMvIzQ==</SignatureValue>
+    <SignatureValue>iBd/e8xLtfBsK+u3VHlof9qo4XHtVE/EQrfGgSfyxlKQeD2z9y19iq6m1f4HBAqKH4P9jbfCmbHbqbZMpz3w00EPK3Ay9OjvgVVYklbEFBoeah18JeJ68yjWJZ8D7Wz+loJ1A+DZQZkRX8CYvzY3LpY7DPQvYngeW4LkiT4meVniLsvkPqoMBlhbzBt65xXMYVvothO4Pk5sr4CMikbLHAv5/BEX+TVApOcixA5izCRC7PfGzjIAKCeCqUyEcYcRwUlKBFO6pcH6pac9Iu2a/OpdugmmTZrOhDmEoczDtuLxNYxv9e5DiyUzomJB+BXgqG9yGY4gzfc4fOVkWHUs1Q==</SignatureValue>
     <Object Id="private" MimeType="text/xml" Encoding="utf-8">
       <SignatureData xmlns="">
         <EditonLevel>FREE</EditonLevel>
         <HostName>TWVEN3-LAP-44</HostName>
-        <Data><![CDATA[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]]></Data>
+        <Data><![CDATA[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]]></Data>
         <Crypto>
-          <IV><![CDATA[rbrgfgXiUttTzq2Yx5NWxMqApnA8/pB2b5QLBKsmL0WltvH23bovdkAZNKUsUioK5zkI5cVuBJhorT5KN2xgiYqb/SIoEUhup1YqYRKlEAzxt61UFzr8i4SRUykodfoWKsG1CVOTax758MVCALSVE05Xq0jvZRWODJaVLa8e9IcmONAdlr5D/KrzzgexU4zuEHg+ctL3Sew4yYJaDRW3JKOyTTqTu62mANSoQzo9M3+Auxc9I51q4klbXfaWp2RLCToKBoxdqDpQErtomYEbtFZwyFPLYJZp3GhUidg4rjCIVeHqEW092zpSjKWfcLI9slur3C9p0YtK2PpPQ1zOKQ==]]></IV>
-          <Key><![CDATA[hjkQjnpE4cRC1wFhGqAA0vSt/nAIcn9B5HfiWqt0ghM9MeNbb983kfJwFScqhWPB+7WpLI+SRr8WwqjdYLZEhwLsfSdS+ppw7Q441Akrrn6M6r0UtQF39Z1HFpl3JzHUN5OWMohyVHj63v/oUai/coIDkHiZPCmNejzc53LmrIGIPyZTSPqsQFMN6ZnBABxcgwWFGt0BRyvNL2YRP2YsuEwDVX8SyJwlO0DXuImVw7tucZXgUGvWCRkmmoNGD4s2Erk/Qp8KddxtGhdN/3ynMvjIb94QOCqfBy0hghX8jU4pSY/iSOYf1852ue495pKq/MJ9a13PTGVMXmJvMIwaJA==]]></Key>
+          <IV><![CDATA[LQ/rDEEIpEf8OcKhG1t5vKLpq0X4FmifXBi1kLy3mz1Vgui77h/xQbEComCrfG61a4xIM68iyKng4JqkrewF8n4pb/rqbCXqkqM3lGB/fVAZgRdPmj5/FhMpMO0Q5IYiPKvvzQPJ/q0GnkgjDX/pRdv0pyiF7D0PR6KVUc2w7L/HcLxSxQ4MgAMhpu2cC3ItJJt8MqHsF+VfZC5BUf0suvxys45iMi/ygAbK0Ix45SSN2aPbKGA5GWogD9egg1caZc5VHl1TacHsGbsWgGtLqtaQj0nlTRlrN3gGgjKF0db2LyMxR/VpbPG7sOHHl5B9ruZD2MZK09Yl7WMnwyFLYw==]]></IV>
+          <Key><![CDATA[NjbL361tYaFsTsqDx3vEEoXRUQmU751CvcN5FSWkEjPWPXJX8QEdSAtMQmrbCiTENEEmXGvKQhCS/C+/imtWouWrqWgbbiAZ/FoKHN7pl+BzZlUjwes0gIwcxuqrkIqGAyJAD8UeAFqD3Bvnu2339EHjckf5BT6ygJxYBhrSGtW5ZAaBfOfIXjSATISpn1x4h3pxNZYhw+zg4BOot0ERjTDx6De1tfCDtBedDf2FUBzFLh7VL7RztfwP/F27EdydQS7VEk0HixxwM/OMaiwPIaeDozWZTiB6OJbb4QR8lUdVCV5r1mG+JY5PsIwxXKGQ0sUgM2IU7YJE4otB9l/RgQ==]]></Key>
         </Crypto>
       </SignatureData>
     </Object>
