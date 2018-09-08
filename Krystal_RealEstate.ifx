@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="krystal-realestate" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b979f121-6a4a-4861-81ab-24c919b4ed53" OriginalId="1-022f7010-14e8-4420-bdf3-de26625b01b9" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2018-09-08T05:00:54.5066117Z" SnapshotPath="player://data/Snapshots/default.png">
+=======
+<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="krystal-realestate" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b979f121-6a4a-4861-81ab-24c919b4ed53" OriginalId="1-022f7010-14e8-4420-bdf3-de26625b01b9" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2018-09-03T10:20:56.1153111Z" SnapshotPath="player://data/Snapshots/default.png">
+>>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
   <ComposerExtensions>
     <Extension Name="HasActionTargetTreeBeenManipulated" Value="true" />
     <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
@@ -2454,10 +2458,10 @@ To create niche for ourself in the Real-Estate industry
             <Attribute Key="32a81565-d4d9-4d28-8aa7-77ac398e528e" Value="False" />
           </ComplexAttributes>
         </Extension>
-        <Extension Name="ViewPortXOnScene" Value="1182.40799117346" />
-        <Extension Name="ViewPortYOnScene" Value="1466.68906139176" />
         <Extension Name="TranslateXOnScene" Value="-1115.79469512963" />
         <Extension Name="TranslateYOnScene" Value="-396.976089671043" />
+        <Extension Name="ViewPortXOnScene" Value="1421.62319637693" />
+        <Extension Name="ViewPortYOnScene" Value="1473.05674183196" />
       </ComposerExtensions>
       <Properties>
         <Property Type="Visual" Name="BackgroundEffects">
@@ -2495,8 +2499,9 @@ To create niche for ourself in the Real-Estate industry
           </ComposerExtensions>
           <Attachments>
             <EventTrigger EventType="Container" EventName="Shown">
-              <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Document%202/" Type="Container" Name="SetOpacity" Delay="value:0">
-                <ServiceValueParameter ParamName="dOpacity" Value="value:0" />
+              <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Document%202/" Type="Container" Name="Show" Delay="value:0">
+                <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
                 <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
                 <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                 <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -2670,7 +2675,7 @@ To create niche for ourself in the Real-Estate industry
         </Asset>
         <Collection Name="Slide Show" Visual="Slide show" Style="" Container="Static" ContainerStyle="">
           <ComposerExtensions>
-            <Extension Name="IsExpanded" Value="True" />
+            <Extension Name="IsExpanded" Value="False" />
             <Extension Name="IsExpandedInBindingViews" Value="True" />
             <Extension Name="IsLocked" Value="True" />
           </ComposerExtensions>
@@ -2911,8 +2916,6 @@ To create niche for ourself in the Real-Estate industry
             <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
             <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
             <Property Type="Visual" Name="SelectedIndex"><![CDATA[value:3]]></Property>
-            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:250]]></Property>
-            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:250]]></Property>
             <Property Type="Visual" Name="WingSpan"><![CDATA[value:0.8]]></Property>
             <Property Type="Visual" Name="CurtainAperture"><![CDATA[value:250]]></Property>
             <Property Type="Visual" Name="BackgroundFlat"><![CDATA[value:True]]></Property>
@@ -2925,6 +2928,8 @@ To create niche for ourself in the Real-Estate industry
             <Property Type="Container" Name="Width"><![CDATA[value:2062]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:319]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:250]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:250]]></Property>
           </Properties>
           <Asset Name="3d" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
             <Properties>
@@ -3835,6 +3840,17 @@ To create niche for ourself in the Real-Estate industry
                   <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                 </InvokeService>
               </EventTrigger>
+              <EventTrigger EventType="Visual" EventName="Tapped">
+                <InvokeService Target="player://visuals/krystal-realestate/Project2/Layer%201/Video%201/" Type="Container" Name="SetOpacity" Delay="value:0">
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                  <ServiceValueParameter ParamName="dOpacity" Value="value:1" />
+                </InvokeService>
+              </EventTrigger>
             </Attachments>
             <Properties>
               <Property Type="Domain" Name="Source"><![CDATA[player://resources/bd4cd9cc-8148-408c-86d1-f96b62da4fc9]]></Property>
@@ -3844,6 +3860,7 @@ To create niche for ourself in the Real-Estate industry
               <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
               <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
               <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+              <Property Type="Container" Name="Opacity"><![CDATA[value:1]]></Property>
             </Properties>
           </Asset>
         </Collection>
@@ -4642,6 +4659,23 @@ To create niche for ourself in the Real-Estate industry
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
             <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
             <Property Type="Container" Name="Opacity"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Video 1" Visual="VlcVideo" Style="" Container="Default" ContainerStyle="" Domain="value:Video">
+          <Properties>
+            <Property Type="Visual" Name="GeneratedPosterFrameUri"><![CDATA[player://resources/f5605c79-97e2-4886-b224-3a8d4e186644]]></Property>
+            <Property Type="Domain" Name="Source"><![CDATA[player://resources/47c03520-c8f4-4b19-a5de-8294709b3f58]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:640]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:360]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
         </Asset>
       </Layer>
@@ -5749,7 +5783,11 @@ To create niche for ourself in the Real-Estate industry
       </Infos>
     </Resource>
     <Resource Key="7d9ee850-73e6-4dbe-94c9-5a99b89d0ff9" Type="uri" Length="170524" LastModificationDate="2018-08-31T17:14:20.7082058Z" DefaultValue="player://data/Images/New%20Project.jpg" />
+<<<<<<< HEAD
     <Resource Key="d5ed78d8-89f6-4596-9f35-2786a02791de" Type="snapshot" Length="488778" LastModificationDate="2018-09-08T04:59:33.7699533Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
+=======
+    <Resource Key="d5ed78d8-89f6-4596-9f35-2786a02791de" Type="snapshot" Length="488810" LastModificationDate="2018-09-03T10:13:41.7164649Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
+>>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
     <Resource Key="972bbcce-94c9-40be-a427-bc26b241b37e" Type="uri" Length="766234" LastModificationDate="2018-08-31T17:14:21.1242158Z" DefaultValue="player://data/Images/banner4.jpg" />
     <Resource Key="75386d1f-1e7e-44fa-a6be-42e572549064" Type="uri" Length="17796" LastModificationDate="2018-08-31T17:14:21.2562248Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/skyila-logo-1-280x300.png" />
     <Resource Key="9c7572d7-cf17-4cdd-8dc2-eaddffb697ec" Type="uri" Length="17955" LastModificationDate="2018-08-31T17:14:21.1682201Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/lapaloma-logo-300x207.png" />
@@ -5852,18 +5890,22 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="e5f3d495-dd01-497b-8c78-3a73ca4525a1" Type="uri" Length="3971" LastModificationDate="2018-08-31T17:14:21.2562248Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/riveredge.jpg" />
     <Resource Key="5a9313eb-d1b1-476a-be3d-cc5c111934be" Type="uri" Length="4629" LastModificationDate="2018-08-31T17:14:20.7202064Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Skyla.jpg" />
     <Resource Key="b4fce1ac-2877-484c-ae81-e2e76d1ecbea" Type="uri" Length="5256" LastModificationDate="2018-08-31T17:14:20.7161854Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Rvera.jpg" />
+<<<<<<< HEAD
     <Resource Key="7db64681-ecea-4ea4-9346-6ad2746d3d10" Type="snapshot" Length="488778" LastModificationDate="2018-09-08T04:59:33.7699533Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/4349f9c.png" />
+=======
+    <Resource Key="7db64681-ecea-4ea4-9346-6ad2746d3d10" Type="snapshot" Length="488810" LastModificationDate="2018-09-03T10:13:41.7164649Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/4349f9c.png" />
+>>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
     <Resource Key="flat-d69528ec-7aa8-477b-8e31-fa506e1a854b" Type="uri" Length="1184" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-orange-home-released.png" />
     <Resource Key="flat-67c6522c-5d4a-4f83-bc33-ac2601b8e347" Type="uri" Length="1192" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-orange-home-pressed.png" />
     <Resource Key="flat-82f01134-b863-49bf-8330-737e8c1bdce0" Type="uri" Length="1210" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-blue-home-released.png" />
     <Resource Key="flat-32278517-83e8-457a-8f26-771371a033fb" Type="uri" Length="1206" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-blue-home-pressed.png">
-      <Alternate Value="player://data/Generated/ccd0de551944a3e780dbf277e4e66948.png" Width="128" Height="128" Length="1371" LastModificationDate="2018-08-31T17:48:35.6153062Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/a808f6a4bab7ffaf7ef822dd83765520.png" Width="128" Height="128" Length="1592" LastModificationDate="2018-09-03T10:20:55.3562677Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="flat-a4452959-dce4-4d61-ad3a-c954ed88df63" Type="uri" Length="1239" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-red-home-released.png">
-      <Alternate Value="player://data/Generated/e55f5385ffdf93876edc3275ffd3130f.png" Width="128" Height="128" Length="1416" LastModificationDate="2018-08-31T17:48:35.8594803Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/75f42d5d4472a826bfdd771b56759023.png" Width="128" Height="128" Length="1639" LastModificationDate="2018-09-03T10:20:55.9713029Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="flat-0457f64f-1c64-4204-82b3-da2cdc41f47b" Type="uri" Length="1194" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-red-home-pressed.png">
-      <Alternate Value="player://data/Generated/38b4638583d7f25cba5bf84856a03128.png" Width="128" Height="128" Length="1281" LastModificationDate="2018-08-31T17:48:35.8624815Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/4e48a6644b13368e3a8f3e1c2ced2ce5.png" Width="128" Height="128" Length="1599" LastModificationDate="2018-09-03T10:20:55.8732973Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="d3d64202-a52b-4068-8d08-db5e9a03f642" Type="uri" Length="250010" LastModificationDate="2018-08-31T17:14:20.6961875Z" DefaultValue="player://data/Images/Apila-1.jpg" />
     <Resource Key="e40b6bb1-5f21-42c5-a9e4-b8d51bb8aca5" Type="uri" Length="103641" LastModificationDate="2018-08-31T17:14:20.7401908Z" DefaultValue="player://data/Images/apila-architecture-and-landscaping-views1.jpg" />
@@ -5873,71 +5915,71 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="7ee0d177-beda-4ec7-bc16-ab6b5923d767" Type="uri" Length="135036" LastModificationDate="2018-08-31T17:14:20.5321749Z" DefaultValue="player://data/Documents/Doc1.pdf" />
     <Resource Key="d87e43c9-72ba-480b-b627-cdc547b5f499" Type="uri" Length="474101" LastModificationDate="2018-08-31T17:14:20.5921975Z" DefaultValue="player://data/Documents/PRHIGHLIGHTS.pdf">
       <Dependencies>
-        <Dependency URI="player://data/Documents/Images/f71d77ea30f66a8b_beginSize474101endSize_Page1_96.png" Length="429544" LastModificationDate="2018-08-31T17:14:20.5841778Z" />
-        <Dependency URI="player://data/Documents/Images/f71d77ea30f66a8b_beginSize474101endSize_Page2_96.png" Length="146088" LastModificationDate="2018-08-31T17:14:20.5881797Z" />
-        <Dependency URI="player://data/Documents/Images/f71d77ea30f66a8b_beginSize474101endSize_Page3_96.png" Length="349785" LastModificationDate="2018-08-31T17:14:20.5921975Z" />
+        <Dependency URI="player://data/Documents/Images/f71d77ea30f66a8b_beginSize474101endSize_Page1_96.png" Length="429544" LastModificationDate="2018-09-03T09:44:33.4593821Z" />
+        <Dependency URI="player://data/Documents/Images/f71d77ea30f66a8b_beginSize474101endSize_Page2_96.png" Length="146088" LastModificationDate="2018-09-03T09:44:33.4593821Z" />
+        <Dependency URI="player://data/Documents/Images/f71d77ea30f66a8b_beginSize474101endSize_Page3_96.png" Length="349785" LastModificationDate="2018-09-03T09:44:33.4749822Z" />
       </Dependencies>
     </Resource>
     <Resource Key="b2113b56-f652-4ab7-ac69-89548d742b36" Type="uri" Length="1329457" LastModificationDate="2018-08-31T17:14:20.8721993Z" DefaultValue="player://data/Images/apila-perspective2.jpg">
-      <Alternate Value="player://data/Generated/2cdd59badd6edc4aac48bcd10fca9816.jpg" Width="661" Height="396" Length="233777" LastModificationDate="2018-08-31T17:48:35.6393224Z" />
+      <Alternate Value="player://data/Generated/ed1bdec070322ea99ef64b20be90d881.jpg" Width="661" Height="396" Length="238662" LastModificationDate="2018-09-03T10:20:55.3932698Z" />
     </Resource>
     <Resource Key="ad8a3e69-2474-4a4a-9c1c-0ad70c6a4545" Type="uri" Length="155323" LastModificationDate="2018-08-31T17:14:20.8721993Z" DefaultValue="player://data/Images/apila-perspective3.jpg">
-      <Alternate Value="player://data/Generated/aa33e45ce012bf0a789649a50081429d.jpg" Width="661" Height="396" Length="174808" LastModificationDate="2018-08-31T17:48:35.8114447Z" />
+      <Alternate Value="player://data/Generated/87a787ba8b89dfbd0a1c93cf78cf43d8.jpg" Width="661" Height="396" Length="177231" LastModificationDate="2018-09-03T10:20:55.8912983Z" />
     </Resource>
     <Resource Key="0dba39f2-97fb-4817-bdc6-c474cfa625ab" Type="uri" Length="1629264" LastModificationDate="2018-08-31T17:14:20.8922Z" DefaultValue="player://data/Images/apila-perspective4.jpg">
-      <Alternate Value="player://data/Generated/9686e947e265797e5155ab70921d9650.jpg" Width="661" Height="396" Length="258980" LastModificationDate="2018-08-31T17:48:35.8374642Z" />
+      <Alternate Value="player://data/Generated/a18166b5a0c90582a642bfac77987720.jpg" Width="661" Height="396" Length="262886" LastModificationDate="2018-09-03T10:20:55.6072821Z" />
     </Resource>
     <Resource Key="9c3dc9f9-1696-429e-8bfe-2fe061b4d2b0" Type="uri" Length="1413882" LastModificationDate="2018-08-31T17:14:20.9762066Z" DefaultValue="player://data/Images/apila-perspective5.jpg">
-      <Alternate Value="player://data/Generated/e01687b2d584ca408ba5e371d3a2a0c1.jpg" Width="661" Height="396" Length="235923" LastModificationDate="2018-08-31T17:48:35.7453987Z" />
+      <Alternate Value="player://data/Generated/edc6a786bdd3d3e43f5abb4fda437db7.jpg" Width="661" Height="396" Length="240515" LastModificationDate="2018-09-03T10:20:55.6392839Z" />
     </Resource>
     <Resource Key="988dcdbf-25e8-4e96-bf87-f5ba3b430e3a" Type="uri" Length="1142520" LastModificationDate="2018-08-31T17:14:21.0042079Z" DefaultValue="player://data/Images/apila-play-area.jpg">
-      <Alternate Value="player://data/Generated/d30e277fd6d6afd96d98bb6251875b2f.jpg" Width="661" Height="396" Length="202345" LastModificationDate="2018-08-31T17:48:35.7373935Z" />
+      <Alternate Value="player://data/Generated/df1875a59b4363aeecd9ac0c53329b1f.jpg" Width="661" Height="396" Length="207952" LastModificationDate="2018-09-03T10:20:55.7542905Z" />
     </Resource>
     <Resource Key="c68ab701-b821-4765-aa2e-ffb28fde387e" Type="uri" Length="263837" LastModificationDate="2018-08-31T17:14:21.0122089Z" DefaultValue="player://data/Images/apila-siteplan.jpg">
-      <Alternate Value="player://data/Generated/e9e0e3d90a2c63fc16a50b4cc9d22517.jpg" Width="661" Height="396" Length="255164" LastModificationDate="2018-08-31T17:48:35.8044407Z" />
+      <Alternate Value="player://data/Generated/1f33441ad07e175d9a279e3075444864.jpg" Width="661" Height="396" Length="257774" LastModificationDate="2018-09-03T10:20:55.8212943Z" />
     </Resource>
     <Resource Key="87e714e6-107c-4ed7-ba33-b50fd606a900" Type="uri" Length="1786856" LastModificationDate="2018-08-31T17:14:20.736188Z" DefaultValue="player://data/Images/apila-amphi-theatre.jpg">
-      <Alternate Value="player://data/Generated/5e934d3c11ca8de1eb19ee16da9ad42c.jpg" Width="661" Height="396" Length="259596" LastModificationDate="2018-08-31T17:48:35.6403226Z" />
+      <Alternate Value="player://data/Generated/de2f345256d5e91d61aefd87c5f5b789.jpg" Width="661" Height="396" Length="263979" LastModificationDate="2018-09-03T10:20:55.6912869Z" />
     </Resource>
     <Resource Key="8ced19e3-5de9-4d2d-bfab-c3ddf4b9d6d5" Type="uri" Length="1817909" LastModificationDate="2018-08-31T17:14:20.7561896Z" DefaultValue="player://data/Images/apila-bird-eye.jpg">
-      <Alternate Value="player://data/Generated/0d97a467f5c3823f20b4c0c3581d504f.jpg" Width="661" Height="396" Length="289759" LastModificationDate="2018-08-31T17:48:35.8374642Z" />
+      <Alternate Value="player://data/Generated/707d1162882b77ce00de478fd94f3bcc.jpg" Width="661" Height="396" Length="292248" LastModificationDate="2018-09-03T10:20:55.9503017Z" />
     </Resource>
     <Resource Key="1f682855-1d1e-42b3-8501-162705c5fa2c" Type="uri" Length="1561098" LastModificationDate="2018-08-31T17:14:20.7762085Z" DefaultValue="player://data/Images/apila-club-house.jpg">
-      <Alternate Value="player://data/Generated/b6a6dce1a24abce31053c917bd923dc7.jpg" Width="661" Height="396" Length="259953" LastModificationDate="2018-08-31T17:48:35.8114447Z" />
+      <Alternate Value="player://data/Generated/97f8a5b65feda1f1dc0968ce397b8541.jpg" Width="661" Height="396" Length="264019" LastModificationDate="2018-09-03T10:20:55.6422841Z" />
     </Resource>
     <Resource Key="97707f2d-b85a-4bc6-ade0-1cb43a7b84a0" Type="uri" Length="1448763" LastModificationDate="2018-08-31T17:14:20.7881932Z" DefaultValue="player://data/Images/apila-entrance.jpg">
-      <Alternate Value="player://data/Generated/8076fb5849957d4d295379c5a0959840.jpg" Width="661" Height="396" Length="245593" LastModificationDate="2018-08-31T17:48:35.7514039Z" />
+      <Alternate Value="player://data/Generated/66df1d80eac6c19630e474aa544ad977.jpg" Width="661" Height="396" Length="249863" LastModificationDate="2018-09-03T10:20:55.3412668Z" />
     </Resource>
     <Resource Key="717732a3-00d9-4631-bb28-0651e2d7c534" Type="uri" Length="1501254" LastModificationDate="2018-08-31T17:14:20.8041925Z" DefaultValue="player://data/Images/apila-gazebo.jpg">
-      <Alternate Value="player://data/Generated/41147c9e2bc74264c71c7c7885c38eed.jpg" Width="661" Height="396" Length="245775" LastModificationDate="2018-08-31T17:48:35.8584796Z" />
+      <Alternate Value="player://data/Generated/61299650b7438a798ce135a48d0d4753.jpg" Width="661" Height="396" Length="249780" LastModificationDate="2018-09-03T10:20:55.7242887Z" />
     </Resource>
     <Resource Key="4c01b925-c165-4442-ab49-9d024fa63300" Type="uri" Length="1786263" LastModificationDate="2018-08-31T17:14:20.8361961Z" DefaultValue="player://data/Images/apila-pergola-landscape.jpg">
-      <Alternate Value="player://data/Generated/face480531e8aa498af1d715cbcd6deb.jpg" Width="661" Height="396" Length="269106" LastModificationDate="2018-08-31T17:48:35.6443268Z" />
+      <Alternate Value="player://data/Generated/aa1d82745a8d9a3c9c964ca648c835bf.jpg" Width="661" Height="396" Length="272964" LastModificationDate="2018-09-03T10:20:55.9463014Z" />
     </Resource>
     <Resource Key="d633dcf7-eb55-40ed-bb4b-673482b2175d" Type="uri" Length="1465152" LastModificationDate="2018-08-31T17:14:20.8521949Z" DefaultValue="player://data/Images/apila-perspective1.jpg">
-      <Alternate Value="player://data/Generated/5e052bc7d73bc766da53f81fb0a1cd6b.jpg" Width="661" Height="396" Length="253516" LastModificationDate="2018-08-31T17:48:35.6403226Z" />
+      <Alternate Value="player://data/Generated/6423d871c513a40c7edff341c0bf5f2f.jpg" Width="661" Height="396" Length="257801" LastModificationDate="2018-09-03T10:20:55.5062763Z" />
     </Resource>
     <Resource Key="33f1344f-ce7e-4042-b851-936ccfa69490" Type="uri" Length="115272" LastModificationDate="2018-08-31T17:14:20.7161854Z" DefaultValue="player://data/Images/SKYILA.png">
-      <Alternate Value="player://data/Generated/79d69754fb5b5021adba63676bd2d675.png" Width="287" Height="281" Length="76503" LastModificationDate="2018-09-01T09:21:10.5054934Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/bc01c6b7510f4693f1cd81401ae96df4.png" Width="287" Height="281" Length="78056" LastModificationDate="2018-09-03T10:20:55.5612794Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="837790e7-e9d6-405b-8b86-67448b922bc4" Type="uri" Length="93430" LastModificationDate="2018-08-31T17:14:20.7161854Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/RiverEDGE.png">
-      <Alternate Value="player://data/Generated/10c24732b611222d244050e3164dc21b.png" Width="287" Height="281" Length="68972" LastModificationDate="2018-09-01T09:21:10.5024908Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/7fdb0c53bb186073cc4d5de24bfdb331.png" Width="287" Height="281" Length="70118" LastModificationDate="2018-09-03T10:20:55.3732687Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="a1fb37a1-9c96-45ba-bdd7-7a8c027e359d" Type="uri" Length="93031" LastModificationDate="2018-08-31T17:14:20.7042044Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/LAPALOMA.png">
-      <Alternate Value="player://data/Generated/9edbed4857e7354ec9eb9b16e87983ae.png" Width="292" Height="286" Length="69694" LastModificationDate="2018-09-01T09:21:10.5645345Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/8a3997f70c3e7956aa3e3ed2ab7f24ed.png" Width="292" Height="286" Length="71243" LastModificationDate="2018-09-03T10:20:55.4572735Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="2d89f6a0-7b1f-4adf-8037-0e0fa3706b6c" Type="uri" Length="113399" LastModificationDate="2018-08-31T17:14:20.7122049Z" DefaultValue="player://data/Images/RIVERA1.png">
-      <Alternate Value="player://data/Generated/a0c9e60827ccdcf99a6b7ff4bb32e143.png" Width="287" Height="281" Length="78601" LastModificationDate="2018-09-01T09:21:10.5165008Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/8cca940880a7045322dbbd0b3237d754.png" Width="287" Height="281" Length="79832" LastModificationDate="2018-09-03T10:20:55.6682855Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="31d4816d-98bc-43e6-b41b-f66d11cac321" Type="uri" Length="110992" LastModificationDate="2018-08-31T17:14:20.6921846Z" DefaultValue="player://data/Images/APILA1.png">
-      <Alternate Value="player://data/Generated/9f844788988bf5299c180dd66f802eb7.png" Width="292" Height="286" Length="80240" LastModificationDate="2018-09-01T09:21:10.5044922Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/cfeddf50a836bb68e72e69d521fab709.png" Width="292" Height="286" Length="80978" LastModificationDate="2018-09-03T10:20:55.7972929Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="42381188-ab19-4bfd-8e45-c4b1be022599" Type="snapshot" Length="198737" LastModificationDate="2018-08-28T08:21:10.4632227Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/6c1c942.png" />
     <Resource Key="flat-c47180a5-1eea-4be1-90ce-6714126ffc43" Type="uri" Length="1903" LastModificationDate="2018-08-31T17:14:20.7042044Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-red-next-released.png">
-      <Alternate Value="player://data/Generated/6a041ed6c1b43e37f4b00410465ad50d.png" Width="80" Height="80" Length="1318" LastModificationDate="2018-09-01T07:25:13.4404551Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/886dd9de3e27015d674276a1c0c10e56.png" Width="80" Height="80" Length="1416" LastModificationDate="2018-09-03T10:20:55.868297Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="flat-dcb515e5-77ce-4c8a-8c65-9ffe5d4a3d85" Type="uri" Length="1883" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-red-next-pressed.png">
-      <Alternate Value="player://data/Generated/0ff88bbb766e57cb9d77b698e8cfe427.png" Width="80" Height="80" Length="1353" LastModificationDate="2018-09-01T07:25:13.442457Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/0c9878783734d4810cdabbe56d5f95bb.png" Width="80" Height="80" Length="1447" LastModificationDate="2018-09-03T10:20:55.3502674Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="flat-c4232fc0-e549-4f56-9569-3906b029a777" Type="uri" Length="1921" LastModificationDate="2018-08-31T17:14:20.7042044Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-red-previous-released.png" />
     <Resource Key="flat-805946bb-38be-4d11-bce6-b9536714c39d" Type="uri" Length="1889" LastModificationDate="2018-08-31T17:14:20.7042044Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-red-previous-pressed.png" />
@@ -5951,15 +5993,15 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="38f2379e-e3b5-4353-91d5-259dfc7193dd" Type="uri" Length="25995" LastModificationDate="2018-08-31T17:14:20.6881841Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/6.png" />
     <Resource Key="891611c0-3609-4edc-929e-85a0e26d0483" Type="uri" Length="1958860" LastModificationDate="2018-08-31T17:14:21.4002335Z" DefaultValue="player://data/Object3D/Rv_Building_3/Rv_Building_3.obj">
       <Dependencies>
-        <Dependency URI="player://data/Object3D/Rv_Building_3/Rv_Building_3.mtl" Length="666" LastModificationDate="2018-08-31T17:14:21.3802342Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/Object3D/Rv_Building_3/Rv_Building_3.obj" Length="1958860" LastModificationDate="2018-08-31T17:14:21.4002335Z" />
+        <Dependency URI="player://data/Object3D/Rv_Building_3/Rv_Building_3.mtl" Length="666" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/Object3D/Rv_Building_3/Rv_Building_3.obj" Length="1958860" LastModificationDate="2018-09-03T09:44:33.942983Z" />
       </Dependencies>
     </Resource>
     <Resource Key="e9e67ba7-a681-4cf5-87fb-41c9639d1848" Type="uri" Length="81446" LastModificationDate="2018-08-31T17:14:20.7641897Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/apila-block-f-g2.jpg">
-      <Alternate Value="player://data/Generated/874ed4fd3301155fa4f1cfe78370f717.jpg" Width="265" Height="300" Length="61975" LastModificationDate="2018-08-31T17:48:35.7764212Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/0af9a37fef09161264b87b68769a6d51.jpg" Width="265" Height="300" Length="63279" LastModificationDate="2018-09-03T10:20:55.39727Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="38635f43-3d7b-45bd-8c73-d11e2988d242" Type="uri" Length="94090" LastModificationDate="2018-08-31T17:14:20.7601892Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/apila-block-d-e1.jpg">
-      <Alternate Value="player://data/Generated/6660a8d1c71a963946425c6a03b617af.jpg" Width="300" Height="226" Length="53996" LastModificationDate="2018-08-31T17:48:35.6783496Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/400b925c5161211853ffe409b0a979b4.jpg" Width="300" Height="226" Length="54973" LastModificationDate="2018-09-03T10:20:55.7572906Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="becb32db-ca1f-4f9c-8fe6-8a5ff338a118" Type="uri" Length="85282" LastModificationDate="2018-08-31T17:14:20.7601892Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/apila-block-d-e4.jpg" />
     <Resource Key="b88719b3-4850-445e-ba45-05aef1b61409" Type="uri" Length="5498" LastModificationDate="2018-08-31T17:14:20.7082058Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Person1_1.jpg" />
@@ -5968,21 +6010,28 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="e6506a09-1bab-40c5-8fcf-823607765660" Type="uri" Length="5893" LastModificationDate="2018-08-31T17:14:20.7122049Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Person4_1.jpg" />
     <Resource Key="2a16b8ec-35dd-4f0b-9f86-ac9442d1330f" Type="uri" Length="6166" LastModificationDate="2018-08-31T17:14:20.7122049Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Person5_1.jpg" />
     <Resource Key="755a7405-a56a-4b08-b67f-fa678c1e80dd" Type="uri" Length="5005" LastModificationDate="2018-08-31T17:14:20.7122049Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Person6_1.jpg">
-      <Alternate Value="player://data/Generated/c1c9c03ff6879d006a2d18a8be1c7ea6.jpg" Width="300" Height="150" Length="20826" LastModificationDate="2018-08-31T17:48:35.7183804Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/34c55fc26ba60635094b9bc023fe19df.jpg" Width="300" Height="150" Length="20750" LastModificationDate="2018-09-03T10:20:55.2362608Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="098e8d43-3b62-49b2-8a6f-06edbf8a5bf4" Type="uri" Length="68013" LastModificationDate="2018-08-31T17:14:20.7122049Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Person7_1.jpg">
-      <Alternate Value="player://data/Generated/79adc15c6925afde35826cfd0ad38b04.jpg" Width="267" Height="300" Length="62728" LastModificationDate="2018-08-31T17:48:35.7133759Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/763a7450cae8611fd8165b603c686d61.jpg" Width="267" Height="300" Length="63917" LastModificationDate="2018-09-03T10:20:55.7742916Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="d6f7ae01-7080-476f-9601-def177fe9a83" Type="uri" Length="4287" LastModificationDate="2018-08-31T17:14:21.3522329Z" DefaultValue="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd">
       <Dependencies>
+<<<<<<< HEAD
         <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/excel_icon.png" Length="425" LastModificationDate="2018-08-31T17:14:21.3682317Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd" Length="4287" LastModificationDate="2018-08-31T17:14:21.3522329Z" />
         <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.xlsx" Length="9260" LastModificationDate="2018-08-31T17:14:21.3522329Z" Archive="SmallFiles.zip" />
+=======
+        <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/excel_icon.png" Length="425" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd" Length="4287" LastModificationDate="2018-08-31T22:44:21.3522329+05:30" />
+        <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.xlsx" Length="9260" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+>>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
       </Dependencies>
     </Resource>
     <Resource Key="c22ab2ce-258c-41e9-8cc1-7e94afb2ad45" Type="uri" Length="1391" LastModificationDate="2018-08-31T17:14:21.1562185Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/icon_DA-map.png" />
     <Resource Key="4841807f-973d-4c98-b438-2d214eb58dd2" Type="uri" Length="7776" LastModificationDate="2018-08-31T17:14:21.3402305Z" DefaultValue="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd">
       <Dependencies>
+<<<<<<< HEAD
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Abstract_InterfaceAsset.js" Length="478" LastModificationDate="2018-08-31T17:14:21.296229Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/AdditionalInformation.js" Length="1404" LastModificationDate="2018-08-31T17:14:21.296229Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/EventEmitter.js" Length="16480" LastModificationDate="2018-08-31T17:14:21.3082282Z" Archive="SmallFiles.zip" />
@@ -5995,6 +6044,20 @@ To create niche for ourself in the Real-Estate industry
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd" Length="7776" LastModificationDate="2018-08-31T17:14:21.3402305Z" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.js" Length="4755" LastModificationDate="2018-08-31T17:14:21.3402305Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Data/Images/icon_DA-map.png" Length="1391" LastModificationDate="2018-08-31T17:14:21.3002291Z" Archive="SmallFiles.zip" />
+=======
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Abstract_InterfaceAsset.js" Length="478" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/AdditionalInformation.js" Length="1404" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/EventEmitter.js" Length="16480" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/GeoErrorHandler.js" Length="700" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/GeoLanguageHandler.js" Length="492" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/icon_reverse_geocode_32.png" Length="750" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Result.js" Length="379" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode-DA.dax" Length="17810" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode-DA.png" Length="25903" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd" Length="7776" LastModificationDate="2018-08-31T22:44:21.3402305+05:30" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.js" Length="4755" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Data/Images/icon_DA-map.png" Length="1391" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
+>>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
       </Dependencies>
     </Resource>
     <Resource Key="028c6a18-5e13-4f7f-91a6-2db392c3dee6" Type="font" DefaultValue="value:Verdana">
@@ -6044,10 +6107,10 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="fc0518cc-5a43-48d2-873d-7be0f4cc3902" Type="uri" Length="3944" LastModificationDate="2018-08-31T17:14:21.1082161Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/background_waves.jpg" />
     <Resource Key="62fe1db9-1a2c-478b-bbc0-7b7c9f3c107d" Type="uri" Length="5555" LastModificationDate="2018-08-31T17:14:21.0442121Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/background1.jpg" />
     <Resource Key="1c11ef01-e376-43cf-aea5-700c67a2271a" Type="uri" Length="28359" LastModificationDate="2018-08-31T17:14:21.1682201Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/image-button-released.png">
-      <Alternate Value="player://data/Generated/cfea8d4c9f94ace015b56db77ac80b1e.png" Width="250" Height="119" Length="4051" LastModificationDate="2018-08-31T17:48:35.6793513Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/58a83ff287d316d15d1b78c052098d44.png" Width="250" Height="119" Length="4645" LastModificationDate="2018-09-03T10:20:55.3672683Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="9dc8ff4e-b6f2-4865-ae2c-8bc9e8355033" Type="uri" Length="29811" LastModificationDate="2018-08-31T17:14:21.1682201Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/image-button-pressed.png">
-      <Alternate Value="player://data/Generated/e01c61402314ad37f93dc9fdfe64fd0b.png" Width="250" Height="119" Length="3787" LastModificationDate="2018-09-01T07:22:07.4815664Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/7300fb9bfd76a0524da5c8a95a9f43f6.png" Width="250" Height="119" Length="4397" LastModificationDate="2018-09-03T10:20:55.3582678Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="54ab9f0d-6f1c-4851-a3da-38d5f6f8f9f1" Type="uri" Length="12266" LastModificationDate="2018-08-31T17:14:20.6921846Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Allinone.jpg" />
     <Resource Key="2ce06715-975d-420e-987d-f6c18161b811" Type="uri" Length="3780" LastModificationDate="2018-08-31T17:14:20.6961875Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Builder1.png" />
@@ -6089,33 +6152,38 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="81e089f2-a803-4740-8ea0-4d01fd3d5bfa" Type="uri" Length="9725" LastModificationDate="2018-08-31T17:14:21.2162216Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/ourprojects4.jpg" />
     <Resource Key="4edf8891-a83e-4da7-ac58-8d3d092d1115" Type="uri" Length="5157" LastModificationDate="2018-08-31T17:14:21.0442121Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/arrow2.jpg" />
     <Resource Key="71fbf355-7a06-4829-a3d4-408df6cb32ad" Type="uri" Length="3869" LastModificationDate="2018-08-31T17:14:21.2122224Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/next.jpg" />
+<<<<<<< HEAD
     <Resource Key="ea458b8f-d6bc-4aa1-aa6d-dd933d4ed230" Type="snapshot" Length="413346" LastModificationDate="2018-09-08T05:00:54.3464774Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/9048be8c.png" />
     <Resource Key="8652e51f-9b25-4889-9b4e-3dea45df5619" Type="snapshot" Length="202693" LastModificationDate="2018-09-02T11:26:13.1793189Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/89130c67.png" />
+=======
+    <Resource Key="ea458b8f-d6bc-4aa1-aa6d-dd933d4ed230" Type="snapshot" Length="405722" LastModificationDate="2018-09-02T11:32:37.8771815Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/9048be8c.png" />
+    <Resource Key="8652e51f-9b25-4889-9b4e-3dea45df5619" Type="snapshot" Length="246203" LastModificationDate="2018-09-03T10:20:53.7641766Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/89130c67.png" />
+>>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
     <Resource Key="0365d83a-fb69-49ac-80a0-24ffff59bf81" Type="snapshot" Length="601822" LastModificationDate="2018-08-31T11:02:28.0656007Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/5c4680a9.png" />
     <Resource Key="62117089-0370-40b0-8510-7bd68fd7a739" Type="snapshot" Length="332755" LastModificationDate="2018-08-31T11:02:09.4665369Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/697f31cc.png" />
     <Resource Key="b863a274-5a4b-4f1f-8727-0d698e1c2ece" Type="snapshot" Length="329675" LastModificationDate="2018-08-31T11:18:53.5409981Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/ce61f59d.png" />
     <Resource Key="a97c7e43-b58c-4145-b840-de08209d16f9" Type="snapshot" Length="600500" LastModificationDate="2018-08-31T11:17:29.7592061Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/e66b97cc.png" />
     <Resource Key="a2bb2cb9-a281-42b7-bf8f-9998b273e300" Type="uri" Length="874113" LastModificationDate="2018-08-31T17:42:02.6044565Z" DefaultValue="player://data/Images/1.jpg" />
     <Resource Key="5bbba22b-4cbe-4e92-b22d-ce35d390e366" Type="uri" Length="51880" LastModificationDate="2018-08-31T17:55:53.8751833Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Leadership_1.png">
-      <Alternate Value="player://data/Generated/361d195be05da8131d3e76adecfe58ae.png" Width="80" Height="80" Length="5006" LastModificationDate="2018-09-01T07:22:07.4815664Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/da9cfc48f7fdef86c2dbaabd1d1a0b3b.png" Width="80" Height="80" Length="5051" LastModificationDate="2018-09-03T10:20:55.5762803Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="7de6ab48-5bf6-4f9c-a65a-af533bf64efb" Type="uri" Length="33378" LastModificationDate="2018-08-31T17:57:39.0620947Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Testimonial-Icon-1.png">
-      <Alternate Value="player://data/Generated/f3c890a39a0ab7424f5d2b90ffce2361.png" Width="69" Height="69" Length="2300" LastModificationDate="2018-09-01T07:22:07.5065851Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/a9defb0d4bb6e65765c82467b0d89a79.png" Width="69" Height="69" Length="2361" LastModificationDate="2018-09-03T10:20:55.344267Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="664adda8-2063-4388-a23b-475b8a12b66a" Type="uri" Length="14654" LastModificationDate="2018-09-01T06:46:40.3385701Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Metal-gold-blue-icon.png">
-      <Alternate Value="player://data/Generated/fb8c0b67209099ddf6b0023d70ef8454.png" Width="55" Height="55" Length="3284" LastModificationDate="2018-09-01T07:22:07.4775626Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/e49af904fa6d2792e906794a9ed5376d.png" Width="55" Height="55" Length="3331" LastModificationDate="2018-09-03T10:20:55.5462786Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="4bb69c0a-5959-4fec-94e8-1f094d976bcf" Type="uri" Length="162818" LastModificationDate="2018-09-01T06:48:20.9050022Z" DefaultValue="player://data/Images/phone_PNG48990.png">
-      <Alternate Value="player://data/Generated/10c2b5e708c7d0532c881720e8710832.png" Width="44" Height="44" Length="3232" LastModificationDate="2018-09-01T07:22:07.4985794Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/295a77efaf9e36c9a9f1e2d4336809f9.png" Width="44" Height="44" Length="3238" LastModificationDate="2018-09-03T10:20:55.4642739Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="1facfae0-69d7-42e8-acee-db5b95413838" Type="uri" Length="30143" LastModificationDate="2018-09-01T07:03:20.3281436Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Next-icon.png">
-      <Alternate Value="player://data/Generated/8316424afac09e8b1999a915b1f68e44.png" Width="82" Height="82" Length="8277" LastModificationDate="2018-09-01T07:25:13.4434572Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/a451a7ab11217e4aa06b994e85b34bd3.png" Width="82" Height="82" Length="8356" LastModificationDate="2018-09-03T10:20:55.4122709Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="5db8114d-863d-4cb4-a233-b6b80630cfbb" Type="uri" Length="15841" LastModificationDate="2018-09-01T07:16:21.1763755Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/home-icon.png">
-      <Alternate Value="player://data/Generated/83dbe6495454b106cfe2737353f5e8a2.png" Width="82" Height="82" Length="9332" LastModificationDate="2018-09-01T07:22:07.4825662Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/951cffccab45ad6d5e59face4157e21d.png" Width="82" Height="82" Length="9461" LastModificationDate="2018-09-03T10:20:55.5862809Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="b9bea62a-a953-44be-804c-03cb9d8c2004" Type="uri" Length="13849" LastModificationDate="2018-09-01T07:20:25.0937168Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/next-icon%20(1).png">
-      <Alternate Value="player://data/Generated/c689ff7ee76e321b1f63efd52bb6a0f0.png" Width="82" Height="82" Length="9243" LastModificationDate="2018-09-01T07:22:07.5145908Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/bfd51ffbefe58102d388be567efedfd4.png" Width="82" Height="82" Length="9377" LastModificationDate="2018-09-03T10:20:55.57128Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="02885809-f8ff-4792-9441-7c92b74f611f" Type="uri" Length="830639" LastModificationDate="2018-09-01T09:13:10.2106694Z" DefaultValue="player://data/Images/Projects%20main.jpg" />
     <Resource Key="d948a306-a266-4182-82e8-167534e06ef2" Type="uri" Length="716397" LastModificationDate="2018-09-01T14:52:33.3006135Z" DefaultValue="player://data/Images/Projects2.jpg" />
@@ -6133,31 +6201,35 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="a2b22c72-aeda-4718-bdc4-977e01589e11" Type="uri" Length="10014" LastModificationDate="2018-09-02T07:03:53.7716584Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Locate.png" />
     <Resource Key="bd4cd9cc-8148-408c-86d1-f96b62da4fc9" Type="uri" Length="9384" LastModificationDate="2018-09-02T07:04:07.5198248Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/video%20copy.png" />
     <Resource Key="5a861398-32cc-48b6-b425-e6f7130544ee" Type="uri" Length="737532" LastModificationDate="2018-09-02T08:55:37.9105394Z" DefaultValue="player://data/Images/full%20building.png">
-      <Alternate Value="player://data/Generated/79898f4b8ca9c4dcdae9f6ffa7bc9412.png" Width="1180" Height="663" Length="393451" LastModificationDate="2018-09-02T09:29:09.7276574Z" />
+      <Alternate Value="player://data/Generated/4ff181af693938da4b20bee2c8da4c80.png" Width="1180" Height="663" Length="403634" LastModificationDate="2018-09-03T10:20:55.3192656Z" />
     </Resource>
     <Resource Key="97128dec-8c27-490c-8e15-4a431cccc426" Type="uri" Length="23006" LastModificationDate="2018-09-02T09:53:26.7585101Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/menu%20floor2.png">
-      <Alternate Value="player://data/Generated/22f0bf58ff9946a3b5e2e091d70b3c8b.png" Width="414" Height="554" Length="22737" LastModificationDate="2018-09-02T11:20:07.149842Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/a62e6a63548833351d8644f8b7f65b50.png" Width="414" Height="554" Length="25983" LastModificationDate="2018-09-03T10:20:55.9182998Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="62c50a6b-05bd-4d39-bee5-1b58d5d141a8" Type="uri" Length="21986" LastModificationDate="2018-09-02T09:56:44.0829697Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/menu%20floor1.png">
-      <Alternate Value="player://data/Generated/01f7341c8f73ffe6b044b6713e897ee1.png" Width="414" Height="554" Length="21696" LastModificationDate="2018-09-02T11:20:07.278937Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/a3365a6039239b2d93484b696ed3f416.png" Width="414" Height="554" Length="24957" LastModificationDate="2018-09-03T10:20:55.4812748Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="c3daf9ee-8705-478a-9f1e-c1d333c934ce" Type="uri" Length="510415" LastModificationDate="2018-09-02T09:09:49.9228559Z" DefaultValue="player://data/Images/building%20breakdown1.png">
-      <Alternate Value="player://data/Generated/35f4a0264eba52f18c20d75eb64e279f.png" Width="1286" Height="723" Length="294276" LastModificationDate="2018-09-02T11:20:07.2299008Z" />
+      <Alternate Value="player://data/Generated/be00fed6879aac9a50eca3158b681cf9.png" Width="1286" Height="723" Length="310870" LastModificationDate="2018-09-03T10:20:55.9022989Z" />
     </Resource>
     <Resource Key="32ec7cef-1e6d-445e-9fc6-91531aa48ffe" Type="uri" Length="14960" LastModificationDate="2018-09-02T10:42:23.5711928Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/unit%20filter%20copy.png">
-      <Alternate Value="player://data/Generated/b3d15a70354db34a92a2044975825748.png" Width="392" Height="524" Length="14660" LastModificationDate="2018-09-02T11:20:07.2939449Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/53c4e5ce23f23224516eb0d1500ed32f.png" Width="392" Height="524" Length="18587" LastModificationDate="2018-09-03T10:20:55.4332721Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="6c61c008-e9be-47c9-a70d-41e530e72e60" Type="uri" Length="509226" LastModificationDate="2018-09-02T10:46:52.219017Z" DefaultValue="player://data/Images/Unit%203A.png">
-      <Alternate Value="player://data/Generated/ecd2aed465001649d763d0fda40971ae.png" Width="1348" Height="758" Length="317910" LastModificationDate="2018-09-02T11:20:07.2719297Z" />
+      <Alternate Value="player://data/Generated/b730a63df432c163e7714ea59835b6d1.png" Width="1348" Height="758" Length="335622" LastModificationDate="2018-09-03T10:20:55.8412954Z" />
     </Resource>
     <Resource Key="74cc01c4-afbd-48e5-b016-7f5d0cd243a4" Type="uri" Length="508053" LastModificationDate="2018-09-02T10:52:34.0225641Z" DefaultValue="player://data/Images/Unit%203B.png">
-      <Alternate Value="player://data/Generated/77177e1a8df134f99cc866a355f04b80.png" Width="1348" Height="758" Length="317452" LastModificationDate="2018-09-02T11:20:07.2128868Z" />
+      <Alternate Value="player://data/Generated/c44a847b5bf00a213aabee709050c6bb.png" Width="1348" Height="758" Length="335173" LastModificationDate="2018-09-03T10:20:55.5972815Z" />
     </Resource>
     <Resource Key="43ed4a19-fab5-428d-a402-bd2c5c1ab1a2" Type="uri" Length="506257" LastModificationDate="2018-09-02T10:48:37.8090958Z" DefaultValue="player://data/Images/Unit%203C.png">
-      <Alternate Value="player://data/Generated/6ab519ddfef66635c4e2e87349344afc.png" Width="1348" Height="758" Length="316439" LastModificationDate="2018-09-02T11:20:07.2299008Z" />
+      <Alternate Value="player://data/Generated/e73266185d09fa7255e335238c89242e.png" Width="1348" Height="758" Length="333991" LastModificationDate="2018-09-03T10:20:55.728289Z" />
     </Resource>
     <Resource Key="125952ab-256b-4e78-8153-99d6d36d8f3e" Type="uri" Length="510018" LastModificationDate="2018-09-02T10:50:10.1455891Z" DefaultValue="player://data/Images/Unit%203d.png">
-      <Alternate Value="player://data/Generated/465cb3adad77a12eb54eecbaf69d6c64.png" Width="1348" Height="758" Length="318378" LastModificationDate="2018-09-02T11:20:07.3679985Z" />
+      <Alternate Value="player://data/Generated/0f6113b68a2d1c28ea7b900a8f495c26.png" Width="1348" Height="758" Length="336326" LastModificationDate="2018-09-03T10:20:55.5212771Z" />
+    </Resource>
+    <Resource Key="47c03520-c8f4-4b19-a5de-8294709b3f58" Type="uri" Length="74129819" LastModificationDate="2018-09-03T09:44:34.5377842Z" DefaultValue="player://data/Videos/Aparna%20Gated%20Communities_1.mp4" />
+    <Resource Key="f5605c79-97e2-4886-b224-3a8d4e186644" Type="generated" Length="270761" LastModificationDate="2018-09-03T10:18:08.2457095Z" DefaultValue="player://data/Generated/92d4571bb4028de0_beginSize74129819endSize20000000.png">
+      <Alternate Value="player://data/Generated/67ccdd50da91fc64649e38b222263ccd.png" Width="640" Height="360" Length="118453" LastModificationDate="2018-09-03T10:20:55.4352722Z" />
     </Resource>
     <Resource Key="340d24f4-533c-4847-af72-e76bc7498426" Type="uri" Length="713037" LastModificationDate="2018-09-08T04:58:22.4443889Z" DefaultValue="player://data/Images/Projects4.jpg" />
   </Resources>
@@ -6183,6 +6255,7 @@ To create niche for ourself in the Real-Estate industry
           <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
         </Transforms>
         <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<<<<<<< HEAD
         <DigestValue>Odrnq/1jsOUS9qOg++vtig+0CBY=</DigestValue>
       </Reference>
     </SignedInfo>
@@ -6195,6 +6268,20 @@ To create niche for ourself in the Real-Estate industry
         <Crypto>
           <IV><![CDATA[g6lAFnFpgA4sKsM1ogGTc38UKP8oOD7E6YaDReFps7txnFNCHT7bGybdU1yyZz78w1HatyVp5yYAgZvfZty1AnE52WxBlPNqXf2uqGqSyqy/kQx8RNhYjhkNWgnF4N9N4XLA3mMRNuqaZdl4YHZDXGxz+z9nbWhZ937CM2IaM4U5EdGgL97brLbYvLu0h+kwYXF5UPCb/ibEEZT4FuACFHJpJ1gl2a2IkHsfSC0nLobEY+VwfnFzcQaEzvZBg2SACNzMUY3Tto8rhKYy7OSJ86MMsRjPqodchZOkc3h9qRZCPDNUyRfeWNj6HlsDGvcU3f2OvduPeJSS/HvbUl1cnQ==]]></IV>
           <Key><![CDATA[XN5C/IyY/YhGRZW4Q5yLhewgCG8BG++NAIvd7CjuTjpPlIUQ/Yroiw85UadA2LBOzzcSddYar/uPkHNny5kFwIMpu4HUZGWfIX+zuFRQCxOuc53Ys1Tv+MnvJQQuRrH/Lyq5j5GOcpCAjYbZjbvCAWOJ57khoz/rx+7HxrHmAy4gwPDMsU3U2YCsEkFucbLHlDwdHi7aHthptPeZRDT7ACALw4TMzCu5mGiAt8Ry374q+25f22kTf0hdHMq2AsJEys8XI8krOrLKRRIm5F8jbw3cLICRSNuKDg7AYlKNBpdc29e2dUAddMhvr+3fCQMIQLvbsWZsZN6lBMHZP4ciLQ==]]></Key>
+=======
+        <DigestValue>y7wKyjPEF4b6EXKbjw3kLdZK8uM=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>CAdtUh4jHxpvn+01gBhDol/wVUWpqLS5IDKT32Iuv/IGMCxEGc9vuXQpWHf+05A6Zl4ssXYBQdhxEMc33b5hO8EkixdYPTFKbibRX+dN90Um1iftFpiwwVhgnAc/gkRVOf0BhLg3y3ZCk182RxJSTK56WYr+6hrPtgFKAOO5LUsz0rQVhPXxmVs1Ns/NXlSGOYHDaIHV8vLJroeZgd3loE56kax3pMfrte/8YjQGC6Hkho8YTlCBTCQMPgRrYvPJ7xfUlqO6Hf12Musg6aB1/NY8W5sFm0Ha+4Vt0pgNHFrOYzFozFbKIRu5xvSnm+HSxmn7aleUm3Gorgo5q/8VrA==</SignatureValue>
+    <Object Id="private" MimeType="text/xml" Encoding="utf-8">
+      <SignatureData xmlns="">
+        <EditonLevel>FREE</EditonLevel>
+        <HostName>INGWA-2-PC</HostName>
+        <Data><![CDATA[t/+x3Wo8Rvm0bz4N7qUUYc13s66nxrqjWIORf7+31eNV+2JfFUpxIQXWIp1JgCvtUK347DjUj798dorumKbbOxoVgkJg8KjdDLqrc/c+hcHH+Cr1mrUEncrm2zl9jfTxoPm1nbxVpP1jFGQYWwUcj2AE+Vq6qwZlNBBYFP2BKleRVt4uvCnSg11sjmae3aElTJw/9cWWYtCsoxnm1F39GDU03TbWDtJhcaQPUAGNp1ejPH3I4t8EGaHUWMgLKyOzV7QndElg4Uk2p6cQ0Ajyf1mPtK1bBwIiXBC9xYuA3YX08RmWyDCp4H2ejU8JUKRKQStv+LSPSNVJRnBLCUb6jej2G3Z49NzXQ/0z2OPEhzYVFsRZk7MrVjqOBZ1uLGk9hhjFDY2mrckbSnll9DtFtSQran5g/ZWuZGXjuOJzTrXNyWMZnbGdBtivM2i3KkrYl5+LNyWvMOQAkd8bI30yd2PEc9Kha8ETz4Nn9NUQIabrmg6havA8UES5ELCbXO4UJDiWIrn8j85jNgY88qSdviM2pI23yZ+cfz5plBarvSlPnQVh1k0TrFXhmpeRZ3Qo0wx6m6cVoxn3vWsFDSWV8W04Bu5EUhcITM/ZzE/DOOtdoEkTCl6Hdys46F27b+Q32GHyuDrSE+uk11LyL5u6un482380jtyL6GLdiDHsqpYugFGTYG9Ppq5PaBEEa2TTd1y8sHkqFQjESGV42WlkVmsqMj2JqSRoOIFIdZRUpmkYuMAlaS1Hsax3TjoCeiUTEFzQR3L5ciF8UzwKrXchriCdm9YcxyLhHyFbAisE46uvuzwJDSwJvSkl87gvOCeb3HreQFG/yv9U6DJKtoC3C6QFqBJD6S2TBVIQKgNKZ/WMJRgBr2Uz517hpH17lgu6bCqmB8qiu2AaIBsvQpZu8XvW7zKDHxAxKSRP9Ot8WOpJr+aBtqnq2Ck8H+Arjp7fygwqdPvacu5YMACtfAdPy8XhJDA9jY4Ed4yMKTCnNDR4lC4vW88pd67R5yUJTiskiauQEskTpUe6Twbk4m4obxowRa+fCVHwaIuHsb6wBv1b6tWPnVPXWvokwLVlbRJQE8jk8/wkxSwgyt789wlDkj2GKQ0KKxI/wRv5IFBxQS3Jbu0LOMObehorxQrEX0F7gSfBr6Kg3A6z2cuwTJ1aTdfVZ0Z9HNuiBAwBCe3SU/3Hzu6x56Tua/yoFsf+Wr9KQE+CzZdzeIaN4JFNVHUaKV7Mw3R5U5iusS3DmkNKeLCF5I2LjD+khHOd1WXIL+p5kYlzVo3Xt/v8wRhqO5L/DzuHYOZNRDK4RRG9/6tUlvQXsE5VjZ8SlWsLUmXPWCiWaWrdeRWa+UDDElxrNyWqq0BS00cXS4KVUxUHb15QL1/BUxyAGXDP8zZUExSPDNhUKesUByb9MZuU9f4WAVwS3S9wUfugHP8IqrvYowqVFN+cTjaJxiE7SADvRyh5xT1FRbb+mS2/2LVmPFFlXSgZj7Eq57UFGT6NAfpkdu+Q3HUHLD81nsz4d6Z3UZsyD/4gHiq3zvDvVscICrDOz1XN8PfACMMi2gLQ60S3L1KYmHMT2SlupC7D4ZicvJewfszBkPHFyqtc4oTaaVMQFWMHVf+0ECkGMCSnpwao3h/G/kV5awEN/Z4K1NxGHjx/1925otO9cv0mlXHQo5g2TZc8PGuDH4Ebk373nWBtt4t2YTJnNnS3lix4+wCIe8uBikeFuTq7T/Ut4YOMHvRYhImTP6AJgtBOjSnmO4d426PDUx065DjdkmdGl28PbuDgRJ+51VpqcV7tphZynKxNf6i49v5QoFVUDPxATqoiBSzGQ55aFrMDnVW8iUAxzD4xpm4VQhvmgvebWNMs6ZLKLVTFIsyQ00/9NfH2VjjEEI+gxWlJDW2oiIBA9/rbAnCUn8ol0dovxbjnBza4A4OARliT4/etR663a0yGHHEvEE8W2Ty6K1LDiqX8pOcrl9dD0X+uElO3x8yhh1E3WrOSKBuMdk6ULgwzAp/p/JYO6SODoMDWRUt+0TYOEuHPIS45uTiXgAD3dajXL6ndr88id+/B8MWTezAM+cUH4wMc1oT4S0r8Nuefr55z5rSnhFO1hxOC3v36og6eqwDdhj1+cFmGfqwn6Do/1cnANgTKtzfPo+FXjkHixn+lHPAuFZsC8g1O]]></Data>
+        <Crypto>
+          <IV><![CDATA[jMaI3KvQDKIzvGGFRp+yZvOhegRZ6ERb5DF6T3ASIyk6oob29UoaIVmZS+0dG4w0Bcf3EoG8yNCIKIX5RRRDMh+4RuZU2RVsshpYbCdXiVB9MJ6FdDmk3f0pRQEF8db+ikoSekpapjsiTn6sSgo4/trsm5BYfE7iESA3w5eIhYuZs2WalEglGmYQ+eZdrQXNDy0WUsRn+BI52IUf9EsZqa8sDwWPZrOb38l2relHLJvKA0K1/ayi2IrInbDlq9KVchvqEcmXmLuzZUa9HuFdcgktDmglN5fSJocHtZU4n5lYD7C0cMwHYyGTxGV8oSjpFLLKY6+TI5xWKWpIKaf2hQ==]]></IV>
+          <Key><![CDATA[J/y91fA/8iBDhhsNZDhBycnaH4j7/XLgqaaozSCTpJF3iSGVZcAxfg0lBAn/3I5/L4Hc0CLa8oaguqkPFUA5pQArRVaENirQNqjIjiDKT8MsYBXFgA0JnKCrY/UtdSr4vnmWtojr+lwW15QnOlWWfhjsRO0c7t2YAkqOKVGC1Ojuog0J2UMKqQ5mOHbyiToSbVAGfETpF+lZHMUpG0k1uzKq2V4AWrOjLpY7b9JsrMNaeLvylPUCAcPrj3jYIFgIpGfFrazKbMzjN1jK2m5ne5ik3EliMxyA/lkp5uawBB+NuwvPkAw3B/VH5/2v/QgZQ3H/48TaH0JuFwO0zttfGA==]]></Key>
+>>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
         </Crypto>
       </SignatureData>
     </Object>
