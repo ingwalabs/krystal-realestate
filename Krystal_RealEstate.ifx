@@ -1,9 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="krystal-realestate" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b979f121-6a4a-4861-81ab-24c919b4ed53" OriginalId="1-022f7010-14e8-4420-bdf3-de26625b01b9" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2018-09-08T05:00:54.5066117Z" SnapshotPath="player://data/Snapshots/default.png">
-=======
 <Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="krystal-realestate" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b979f121-6a4a-4861-81ab-24c919b4ed53" OriginalId="1-022f7010-14e8-4420-bdf3-de26625b01b9" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2018-09-03T10:20:56.1153111Z" SnapshotPath="player://data/Snapshots/default.png">
->>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
   <ComposerExtensions>
     <Extension Name="HasActionTargetTreeBeenManipulated" Value="true" />
     <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
@@ -238,9 +234,9 @@ Start]]></Property>
           </ComplexAttributes>
         </Extension>
         <Extension Name="TranslateXOnScene" Value="-944.157382330181" />
-        <Extension Name="ViewPortXOnScene" Value="1148.24522557556" />
-        <Extension Name="ViewPortYOnScene" Value="1424.3126947033" />
-        <Extension Name="TranslateYOnScene" Value="-709.850995662953" />
+        <Extension Name="ViewPortXOnScene" Value="2245.36347808138" />
+        <Extension Name="ViewPortYOnScene" Value="2785.20618664137" />
+        <Extension Name="TranslateYOnScene" Value="-827.118593168542" />
       </ComposerExtensions>
       <Properties>
         <Property Type="Visual" Name="BackgroundEffects">
@@ -250,7 +246,7 @@ Start]]></Property>
         </Property>
         <Property Type="Visual" Name="UseExperienceKeyboardStyle"><![CDATA[value:False]]></Property>
       </Properties>
-      <BackgroundAsset Name="Projects-Background" Uri="player://resources/340d24f4-533c-4847-af72-e76bc7498426">
+      <BackgroundAsset Name="Projects-Background" Uri="player://resources/2cb54bd1-2dfe-4034-bca3-b5a4dd2abe5a">
         <Properties>
           <Property Type="Visual" Name="DisplayFillBehavior"><![CDATA[value:Fit]]></Property>
         </Properties>
@@ -453,12 +449,10 @@ Start]]></Property>
             <Property Type="Visual" Name="Effects">
               <EffectsCollection>
                 <Grayscale Factor="5" />
-                <Sepia Factor="3" />
               </EffectsCollection>
             </Property>
             <Property Type="Visual" Name="Diameter"><![CDATA[value:0.5]]></Property>
-            <Property Type="Visual" Name="ShowItemLoadingImage"><![CDATA[value:False]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:1445]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:961]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:382]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:1200]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:600]]></Property>
@@ -520,7 +514,7 @@ Start]]></Property>
             <Attachments>
               <EventTrigger EventType="Visual" EventName="Tapped">
                 <Navigate Type="Normal" Delay="value:0">
-                  <ServiceValueParameter ParamName="Target" Value="player://visuals/krystal-realestate/Project3/" />
+                  <ServiceValueParameter ParamName="Target" Value="player://visuals/krystal-realestate/Project2/" />
                   <Transition>
                     <ZoomInTransition Duration="00:00:00.3000000" />
                   </Transition>
@@ -5783,11 +5777,7 @@ To create niche for ourself in the Real-Estate industry
       </Infos>
     </Resource>
     <Resource Key="7d9ee850-73e6-4dbe-94c9-5a99b89d0ff9" Type="uri" Length="170524" LastModificationDate="2018-08-31T17:14:20.7082058Z" DefaultValue="player://data/Images/New%20Project.jpg" />
-<<<<<<< HEAD
-    <Resource Key="d5ed78d8-89f6-4596-9f35-2786a02791de" Type="snapshot" Length="488778" LastModificationDate="2018-09-08T04:59:33.7699533Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
-=======
     <Resource Key="d5ed78d8-89f6-4596-9f35-2786a02791de" Type="snapshot" Length="488810" LastModificationDate="2018-09-03T10:13:41.7164649Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
->>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
     <Resource Key="972bbcce-94c9-40be-a427-bc26b241b37e" Type="uri" Length="766234" LastModificationDate="2018-08-31T17:14:21.1242158Z" DefaultValue="player://data/Images/banner4.jpg" />
     <Resource Key="75386d1f-1e7e-44fa-a6be-42e572549064" Type="uri" Length="17796" LastModificationDate="2018-08-31T17:14:21.2562248Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/skyila-logo-1-280x300.png" />
     <Resource Key="9c7572d7-cf17-4cdd-8dc2-eaddffb697ec" Type="uri" Length="17955" LastModificationDate="2018-08-31T17:14:21.1682201Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/lapaloma-logo-300x207.png" />
@@ -5795,84 +5785,84 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="b942cf08-4b7f-49e6-9c67-d8672e3ccedb" Type="uri" Length="3575" LastModificationDate="2018-08-31T17:14:21.0362092Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/apila.png" />
     <Resource Key="021a5990-35c8-422f-ac94-f4df9dbc1c84" Type="font" DefaultValue="value:Segoe UI">
       <Dependencies>
-        <Dependency URI="player://data/Contents/SEGOEUIL.iff" Length="864532" LastModificationDate="2018-08-31T17:14:20.2441542Z">
+        <Dependency URI="player://data/Contents/SEGOEUIL.iff" Length="864532" LastModificationDate="2018-08-31T22:44:20.2441542+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>300</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUILI.iff" Length="439924" LastModificationDate="2018-08-31T17:14:20.312163Z">
+        <Dependency URI="player://data/Contents/SEGUILI.iff" Length="439924" LastModificationDate="2018-08-31T22:44:20.312163+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>300</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUISL.iff" Length="802664" LastModificationDate="2018-08-31T17:14:20.2802228Z">
+        <Dependency URI="player://data/Contents/SEGOEUISL.iff" Length="802664" LastModificationDate="2018-08-31T22:44:20.2802228+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>350</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUISLI.iff" Length="447304" LastModificationDate="2018-08-31T17:14:20.360177Z">
+        <Dependency URI="player://data/Contents/SEGUISLI.iff" Length="447304" LastModificationDate="2018-08-31T22:44:20.360177+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>350</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUI.iff" Length="910308" LastModificationDate="2018-08-31T17:14:20.1762295Z">
+        <Dependency URI="player://data/Contents/SEGOEUI.iff" Length="910308" LastModificationDate="2018-08-31T22:44:20.1762295+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>400</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUII.iff" Length="508344" LastModificationDate="2018-08-31T17:14:20.2281536Z">
+        <Dependency URI="player://data/Contents/SEGOEUII.iff" Length="508344" LastModificationDate="2018-08-31T22:44:20.2281536+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>400</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUISB.iff" Length="925984" LastModificationDate="2018-08-31T17:14:20.3401759Z">
+        <Dependency URI="player://data/Contents/SEGUISB.iff" Length="925984" LastModificationDate="2018-08-31T22:44:20.3401759+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>600</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUISBI.iff" Length="437940" LastModificationDate="2018-08-31T17:14:20.3481769Z">
+        <Dependency URI="player://data/Contents/SEGUISBI.iff" Length="437940" LastModificationDate="2018-08-31T22:44:20.3481769+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>600</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUIB.iff" Length="898564" LastModificationDate="2018-08-31T17:14:20.2161511Z">
+        <Dependency URI="player://data/Contents/SEGOEUIB.iff" Length="898564" LastModificationDate="2018-08-31T22:44:20.2161511+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>700</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUIZ.iff" Length="522076" LastModificationDate="2018-08-31T17:14:20.2881776Z">
+        <Dependency URI="player://data/Contents/SEGOEUIZ.iff" Length="522076" LastModificationDate="2018-08-31T22:44:20.2881776+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>700</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUIBL.iff" Length="323400" LastModificationDate="2018-08-31T17:14:20.2921553Z">
+        <Dependency URI="player://data/Contents/SEGUIBL.iff" Length="323400" LastModificationDate="2018-08-31T22:44:20.2921553+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>900</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUIBLI.iff" Length="350844" LastModificationDate="2018-08-31T17:14:20.3001554Z">
+        <Dependency URI="player://data/Contents/SEGUIBLI.iff" Length="350844" LastModificationDate="2018-08-31T22:44:20.3001554+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>900</FontWeight>
@@ -5890,11 +5880,7 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="e5f3d495-dd01-497b-8c78-3a73ca4525a1" Type="uri" Length="3971" LastModificationDate="2018-08-31T17:14:21.2562248Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/riveredge.jpg" />
     <Resource Key="5a9313eb-d1b1-476a-be3d-cc5c111934be" Type="uri" Length="4629" LastModificationDate="2018-08-31T17:14:20.7202064Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Skyla.jpg" />
     <Resource Key="b4fce1ac-2877-484c-ae81-e2e76d1ecbea" Type="uri" Length="5256" LastModificationDate="2018-08-31T17:14:20.7161854Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Rvera.jpg" />
-<<<<<<< HEAD
-    <Resource Key="7db64681-ecea-4ea4-9346-6ad2746d3d10" Type="snapshot" Length="488778" LastModificationDate="2018-09-08T04:59:33.7699533Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/4349f9c.png" />
-=======
     <Resource Key="7db64681-ecea-4ea4-9346-6ad2746d3d10" Type="snapshot" Length="488810" LastModificationDate="2018-09-03T10:13:41.7164649Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/4349f9c.png" />
->>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
     <Resource Key="flat-d69528ec-7aa8-477b-8e31-fa506e1a854b" Type="uri" Length="1184" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-orange-home-released.png" />
     <Resource Key="flat-67c6522c-5d4a-4f83-bc33-ac2601b8e347" Type="uri" Length="1192" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-orange-home-pressed.png" />
     <Resource Key="flat-82f01134-b863-49bf-8330-737e8c1bdce0" Type="uri" Length="1210" LastModificationDate="2018-08-31T17:14:20.7001889Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-blue-home-released.png" />
@@ -6017,34 +6003,14 @@ To create niche for ourself in the Real-Estate industry
     </Resource>
     <Resource Key="d6f7ae01-7080-476f-9601-def177fe9a83" Type="uri" Length="4287" LastModificationDate="2018-08-31T17:14:21.3522329Z" DefaultValue="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd">
       <Dependencies>
-<<<<<<< HEAD
-        <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/excel_icon.png" Length="425" LastModificationDate="2018-08-31T17:14:21.3682317Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd" Length="4287" LastModificationDate="2018-08-31T17:14:21.3522329Z" />
-        <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.xlsx" Length="9260" LastModificationDate="2018-08-31T17:14:21.3522329Z" Archive="SmallFiles.zip" />
-=======
         <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/excel_icon.png" Length="425" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd" Length="4287" LastModificationDate="2018-08-31T22:44:21.3522329+05:30" />
         <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.xlsx" Length="9260" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
->>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
       </Dependencies>
     </Resource>
     <Resource Key="c22ab2ce-258c-41e9-8cc1-7e94afb2ad45" Type="uri" Length="1391" LastModificationDate="2018-08-31T17:14:21.1562185Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/icon_DA-map.png" />
     <Resource Key="4841807f-973d-4c98-b438-2d214eb58dd2" Type="uri" Length="7776" LastModificationDate="2018-08-31T17:14:21.3402305Z" DefaultValue="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd">
       <Dependencies>
-<<<<<<< HEAD
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Abstract_InterfaceAsset.js" Length="478" LastModificationDate="2018-08-31T17:14:21.296229Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/AdditionalInformation.js" Length="1404" LastModificationDate="2018-08-31T17:14:21.296229Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/EventEmitter.js" Length="16480" LastModificationDate="2018-08-31T17:14:21.3082282Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/GeoErrorHandler.js" Length="700" LastModificationDate="2018-08-31T17:14:21.3082282Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/GeoLanguageHandler.js" Length="492" LastModificationDate="2018-08-31T17:14:21.3322299Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/icon_reverse_geocode_32.png" Length="750" LastModificationDate="2018-08-31T17:14:21.3522329Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Result.js" Length="379" LastModificationDate="2018-08-31T17:14:21.3322299Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode-DA.dax" Length="17810" LastModificationDate="2018-08-31T17:14:21.3362299Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode-DA.png" Length="25903" LastModificationDate="2018-08-31T17:14:21.3402305Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd" Length="7776" LastModificationDate="2018-08-31T17:14:21.3402305Z" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.js" Length="4755" LastModificationDate="2018-08-31T17:14:21.3402305Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Data/Images/icon_DA-map.png" Length="1391" LastModificationDate="2018-08-31T17:14:21.3002291Z" Archive="SmallFiles.zip" />
-=======
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Abstract_InterfaceAsset.js" Length="478" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/AdditionalInformation.js" Length="1404" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/EventEmitter.js" Length="16480" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
@@ -6057,33 +6023,32 @@ To create niche for ourself in the Real-Estate industry
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd" Length="7776" LastModificationDate="2018-08-31T22:44:21.3402305+05:30" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.js" Length="4755" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Data/Images/icon_DA-map.png" Length="1391" LastModificationDate="2018-09-03T09:44:33.927383Z" Archive="SmallFiles.zip" />
->>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
       </Dependencies>
     </Resource>
     <Resource Key="028c6a18-5e13-4f7f-91a6-2db392c3dee6" Type="font" DefaultValue="value:Verdana">
       <Dependencies>
-        <Dependency URI="player://data/Contents/VERDANA.iff" Length="240456" LastModificationDate="2018-08-31T17:14:20.4202351Z">
+        <Dependency URI="player://data/Contents/VERDANA.iff" Length="240456" LastModificationDate="2018-08-31T22:44:20.4202351+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>400</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/VERDANAI.iff" Length="220296" LastModificationDate="2018-08-31T17:14:20.4281848Z">
+        <Dependency URI="player://data/Contents/VERDANAI.iff" Length="220296" LastModificationDate="2018-08-31T22:44:20.4281848+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>400</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/VERDANAB.iff" Length="208456" LastModificationDate="2018-08-31T17:14:20.4241853Z">
+        <Dependency URI="player://data/Contents/VERDANAB.iff" Length="208456" LastModificationDate="2018-08-31T22:44:20.4241853+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>700</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/VERDANAZ.iff" Length="226848" LastModificationDate="2018-08-31T17:14:20.4321858Z">
+        <Dependency URI="player://data/Contents/VERDANAZ.iff" Length="226848" LastModificationDate="2018-08-31T22:44:20.4321858+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>700</FontWeight>
@@ -6136,7 +6101,7 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="47f6faf1-ce2f-4981-9405-ee022dbe6dfc" Type="uri" Length="14666" LastModificationDate="2018-08-31T17:14:21.2722283Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/testmonials3.png" />
     <Resource Key="b41dd15b-61d5-4f49-b361-dd70b9fc280d" Type="font" DefaultValue="value:Cambria Math">
       <Dependencies>
-        <Dependency URI="player://data/Contents/CAMBRIA.iffc" Length="1622732" LastModificationDate="2018-08-31T17:14:20.1201505Z">
+        <Dependency URI="player://data/Contents/CAMBRIA.iffc" Length="1622732" LastModificationDate="2018-08-31T22:44:20.1201505+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>400</FontWeight>
@@ -6152,13 +6117,8 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="81e089f2-a803-4740-8ea0-4d01fd3d5bfa" Type="uri" Length="9725" LastModificationDate="2018-08-31T17:14:21.2162216Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/ourprojects4.jpg" />
     <Resource Key="4edf8891-a83e-4da7-ac58-8d3d092d1115" Type="uri" Length="5157" LastModificationDate="2018-08-31T17:14:21.0442121Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/arrow2.jpg" />
     <Resource Key="71fbf355-7a06-4829-a3d4-408df6cb32ad" Type="uri" Length="3869" LastModificationDate="2018-08-31T17:14:21.2122224Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/next.jpg" />
-<<<<<<< HEAD
-    <Resource Key="ea458b8f-d6bc-4aa1-aa6d-dd933d4ed230" Type="snapshot" Length="413346" LastModificationDate="2018-09-08T05:00:54.3464774Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/9048be8c.png" />
-    <Resource Key="8652e51f-9b25-4889-9b4e-3dea45df5619" Type="snapshot" Length="202693" LastModificationDate="2018-09-02T11:26:13.1793189Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/89130c67.png" />
-=======
     <Resource Key="ea458b8f-d6bc-4aa1-aa6d-dd933d4ed230" Type="snapshot" Length="405722" LastModificationDate="2018-09-02T11:32:37.8771815Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/9048be8c.png" />
     <Resource Key="8652e51f-9b25-4889-9b4e-3dea45df5619" Type="snapshot" Length="246203" LastModificationDate="2018-09-03T10:20:53.7641766Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/89130c67.png" />
->>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
     <Resource Key="0365d83a-fb69-49ac-80a0-24ffff59bf81" Type="snapshot" Length="601822" LastModificationDate="2018-08-31T11:02:28.0656007Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/5c4680a9.png" />
     <Resource Key="62117089-0370-40b0-8510-7bd68fd7a739" Type="snapshot" Length="332755" LastModificationDate="2018-08-31T11:02:09.4665369Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/697f31cc.png" />
     <Resource Key="b863a274-5a4b-4f1f-8727-0d698e1c2ece" Type="snapshot" Length="329675" LastModificationDate="2018-08-31T11:18:53.5409981Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/ce61f59d.png" />
@@ -6231,7 +6191,6 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="f5605c79-97e2-4886-b224-3a8d4e186644" Type="generated" Length="270761" LastModificationDate="2018-09-03T10:18:08.2457095Z" DefaultValue="player://data/Generated/92d4571bb4028de0_beginSize74129819endSize20000000.png">
       <Alternate Value="player://data/Generated/67ccdd50da91fc64649e38b222263ccd.png" Width="640" Height="360" Length="118453" LastModificationDate="2018-09-03T10:20:55.4352722Z" />
     </Resource>
-    <Resource Key="340d24f4-533c-4847-af72-e76bc7498426" Type="uri" Length="713037" LastModificationDate="2018-09-08T04:58:22.4443889Z" DefaultValue="player://data/Images/Projects4.jpg" />
   </Resources>
   <Sequence>
     <SpaceRef Space="player://visuals/krystal-realestate/Home%20Page/" />
@@ -6255,20 +6214,6 @@ To create niche for ourself in the Real-Estate industry
           <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
         </Transforms>
         <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-<<<<<<< HEAD
-        <DigestValue>Odrnq/1jsOUS9qOg++vtig+0CBY=</DigestValue>
-      </Reference>
-    </SignedInfo>
-    <SignatureValue>WqqwCf9VwN/vBZ43vOastqnUHbLAqDhGxoN82g+6a+877FOoT8NqZTgLU9bKr63WU4RvjQy/754FZQbyc8I2jY2DBkSSxQ98fakAwarCA62NBXdZa2xO+cY97oDBVXi44/NbgGhTkcI8uWRc+uay7feSVt3R2yVguz/QTbd8lHEUJKF3/YthoIghDxwctndpzkFAIKY3X4hLUaAxM4WTtJIMpKaBEuuHrb9hd2qxumLbyOhqYUR9GoODK+NqsPs5Y3L3Xp3phHTcvh3TFl4LjNvmLmmxOF3l42d0166giBrGRoc6usxy8Lw3xzXu/CGLBO72tJOSNlmLA6PztNlD/g==</SignatureValue>
-    <Object Id="private" MimeType="text/xml" Encoding="utf-8">
-      <SignatureData xmlns="">
-        <EditonLevel>FREE</EditonLevel>
-        <HostName>TWVEN3-LAP-44</HostName>
-        <Data><![CDATA[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]]></Data>
-        <Crypto>
-          <IV><![CDATA[g6lAFnFpgA4sKsM1ogGTc38UKP8oOD7E6YaDReFps7txnFNCHT7bGybdU1yyZz78w1HatyVp5yYAgZvfZty1AnE52WxBlPNqXf2uqGqSyqy/kQx8RNhYjhkNWgnF4N9N4XLA3mMRNuqaZdl4YHZDXGxz+z9nbWhZ937CM2IaM4U5EdGgL97brLbYvLu0h+kwYXF5UPCb/ibEEZT4FuACFHJpJ1gl2a2IkHsfSC0nLobEY+VwfnFzcQaEzvZBg2SACNzMUY3Tto8rhKYy7OSJ86MMsRjPqodchZOkc3h9qRZCPDNUyRfeWNj6HlsDGvcU3f2OvduPeJSS/HvbUl1cnQ==]]></IV>
-          <Key><![CDATA[XN5C/IyY/YhGRZW4Q5yLhewgCG8BG++NAIvd7CjuTjpPlIUQ/Yroiw85UadA2LBOzzcSddYar/uPkHNny5kFwIMpu4HUZGWfIX+zuFRQCxOuc53Ys1Tv+MnvJQQuRrH/Lyq5j5GOcpCAjYbZjbvCAWOJ57khoz/rx+7HxrHmAy4gwPDMsU3U2YCsEkFucbLHlDwdHi7aHthptPeZRDT7ACALw4TMzCu5mGiAt8Ry374q+25f22kTf0hdHMq2AsJEys8XI8krOrLKRRIm5F8jbw3cLICRSNuKDg7AYlKNBpdc29e2dUAddMhvr+3fCQMIQLvbsWZsZN6lBMHZP4ciLQ==]]></Key>
-=======
         <DigestValue>y7wKyjPEF4b6EXKbjw3kLdZK8uM=</DigestValue>
       </Reference>
     </SignedInfo>
@@ -6281,7 +6226,6 @@ To create niche for ourself in the Real-Estate industry
         <Crypto>
           <IV><![CDATA[jMaI3KvQDKIzvGGFRp+yZvOhegRZ6ERb5DF6T3ASIyk6oob29UoaIVmZS+0dG4w0Bcf3EoG8yNCIKIX5RRRDMh+4RuZU2RVsshpYbCdXiVB9MJ6FdDmk3f0pRQEF8db+ikoSekpapjsiTn6sSgo4/trsm5BYfE7iESA3w5eIhYuZs2WalEglGmYQ+eZdrQXNDy0WUsRn+BI52IUf9EsZqa8sDwWPZrOb38l2relHLJvKA0K1/ayi2IrInbDlq9KVchvqEcmXmLuzZUa9HuFdcgktDmglN5fSJocHtZU4n5lYD7C0cMwHYyGTxGV8oSjpFLLKY6+TI5xWKWpIKaf2hQ==]]></IV>
           <Key><![CDATA[J/y91fA/8iBDhhsNZDhBycnaH4j7/XLgqaaozSCTpJF3iSGVZcAxfg0lBAn/3I5/L4Hc0CLa8oaguqkPFUA5pQArRVaENirQNqjIjiDKT8MsYBXFgA0JnKCrY/UtdSr4vnmWtojr+lwW15QnOlWWfhjsRO0c7t2YAkqOKVGC1Ojuog0J2UMKqQ5mOHbyiToSbVAGfETpF+lZHMUpG0k1uzKq2V4AWrOjLpY7b9JsrMNaeLvylPUCAcPrj3jYIFgIpGfFrazKbMzjN1jK2m5ne5ik3EliMxyA/lkp5uawBB+NuwvPkAw3B/VH5/2v/QgZQ3H/48TaH0JuFwO0zttfGA==]]></Key>
->>>>>>> c35dae7c793a4adbe96208d26443627cbc19d263
         </Crypto>
       </SignatureData>
     </Object>
