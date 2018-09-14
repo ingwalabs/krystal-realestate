@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="krystal-realestate" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b979f121-6a4a-4861-81ab-24c919b4ed53" OriginalId="1-022f7010-14e8-4420-bdf3-de26625b01b9" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2018-09-10T13:04:20.9655011Z" SnapshotPath="player://data/Snapshots/default.png">
+<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="krystal-realestate" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b979f121-6a4a-4861-81ab-24c919b4ed53" OriginalId="1-022f7010-14e8-4420-bdf3-de26625b01b9" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2018-09-14T11:15:57.7240791Z" SnapshotPath="player://data/Snapshots/default.png">
   <ComposerExtensions>
     <Extension Name="HasActionTargetTreeBeenManipulated" Value="true" />
     <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
@@ -38,6 +38,58 @@
               </Transition>
             </Navigate>
           </EventTrigger>
+          <EventTrigger EventType="Visual" EventName="Tapped">
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu%20hide/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/home-icon/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+          </EventTrigger>
         </Attachments>
         <Properties>
           <Property Type="Domain" Name="Source"><![CDATA[player://resources/5db8114d-863d-4cb4-a233-b6b80630cfbb]]></Property>
@@ -52,6 +104,340 @@
           <Property Type="Container" Name="Width"><![CDATA[value:82]]></Property>
           <Property Type="Container" Name="Height"><![CDATA[value:82]]></Property>
           <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Menu" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Tapped">
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              <ServiceValueParameter ParamName="dX" Value="value:268" />
+              <ServiceValueParameter ParamName="dY" Value="value:100" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              <ServiceValueParameter ParamName="dX" Value="value:268" />
+              <ServiceValueParameter ParamName="dY" Value="value:165" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu%20hide/" Type="Container" Name="Show" Delay="value:0">
+              <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="Show" Delay="value:0">
+              <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="Show" Delay="value:0">
+              <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/02733696-3d73-4ac3-a66d-7b819d219772]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+          <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:270]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:42]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:228]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:63]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Menu hide" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <ComposerExtensions>
+          <Extension Name="IsLocked" Value="True" />
+        </ComposerExtensions>
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Tapped">
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu/" Type="Container" Name="Show" Delay="value:0">
+              <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu%20hide/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              <ServiceValueParameter ParamName="dX" Value="value:275" />
+              <ServiceValueParameter ParamName="dY" Value="value:-96" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              <ServiceValueParameter ParamName="dX" Value="value:268" />
+              <ServiceValueParameter ParamName="dY" Value="value:-18" />
+            </InvokeService>
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/02733696-3d73-4ac3-a66d-7b819d219772]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+          <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:268]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:40]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:63]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Construction" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Tapped">
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              <ServiceValueParameter ParamName="dX" Value="value:268" />
+              <ServiceValueParameter ParamName="dY" Value="value:-29" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              <ServiceValueParameter ParamName="dX" Value="value:268" />
+              <ServiceValueParameter ParamName="dY" Value="value:-95" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu%20hide/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu/" Type="Container" Name="Show" Delay="value:0">
+              <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/4d89e8bf-99f8-4dd9-bd0c-d4edca00cbb3]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+          <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:268]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:-88]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:63]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Projects" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Tapped">
+            <Navigate Type="Normal" Delay="value:0">
+              <ServiceValueParameter ParamName="Target" Value="player://visuals/krystal-realestate/Projects/" />
+              <Transition>
+                <ZoomInTransition Duration="00:00:00.3000000" />
+              </Transition>
+            </Navigate>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu/" Type="Container" Name="Show" Delay="value:0">
+              <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu%20hide/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              <ServiceValueParameter ParamName="dX" Value="value:268" />
+              <ServiceValueParameter ParamName="dY" Value="value:-95" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              <ServiceValueParameter ParamName="dX" Value="value:268" />
+              <ServiceValueParameter ParamName="dY" Value="value:-29" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Construction/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Projects/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/dd2bb399-ea2f-414a-a9aa-75e36ff21f39]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+          <Property Type="Container" Name="MaxHeight"><![CDATA[value:6398]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:268]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:-26]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:63]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
         </Properties>
       </Asset>
       <Asset Name="Image button" Visual="ImageButton" Style="" Container="Static" Domain="value:VisibleTrigger">
@@ -109,10 +495,10 @@
             <Attribute Key="680ae981-29a8-4397-944d-076842296501" Value="False" />
           </ComplexAttributes>
         </Extension>
-        <Extension Name="ViewPortXOnScene" Value="1758.63960126245" />
-        <Extension Name="ViewPortYOnScene" Value="2181.46146284257" />
-        <Extension Name="TranslateYOnScene" Value="-496.861222432371" />
-        <Extension Name="TranslateXOnScene" Value="-1521.26795784972" />
+        <Extension Name="TranslateYOnScene" Value="-317.255475920461" />
+        <Extension Name="ViewPortXOnScene" Value="1749.24291813366" />
+        <Extension Name="ViewPortYOnScene" Value="2169.8055771743" />
+        <Extension Name="TranslateXOnScene" Value="-681.365315357863" />
       </ComposerExtensions>
       <Properties>
         <Property Type="Visual" Name="UseExperienceKeyboardStyle"><![CDATA[value:False]]></Property>
@@ -187,6 +573,16 @@
               <Navigate Type="Normal" Delay="value:0">
                 <ServiceValueParameter ParamName="Target" Value="player://visuals/krystal-realestate/About%20Builders/" />
               </Navigate>
+              <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/home-icon/" Type="Container" Name="Show" Delay="value:0">
+                <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              </InvokeService>
             </EventTrigger>
             <EventTrigger EventType="Visual" EventName="Tapped">
               <Navigate Type="Normal" Delay="value:0">
@@ -195,6 +591,18 @@
                   <ZoomInTransition Duration="00:00:00.3000000" />
                 </Transition>
               </Navigate>
+            </EventTrigger>
+            <EventTrigger EventType="Visual" EventName="Tapped">
+              <InvokeService Target="player://visuals/krystal-realestate/Experience%20layer%201/Menu/" Type="Container" Name="Show" Delay="value:0">
+                <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+              </InvokeService>
             </EventTrigger>
           </Attachments>
           <Properties>
@@ -1629,10 +2037,10 @@ Mr. Srivardhan is a graduate in business management with experience in manufactu
             <Attribute Key="680ae981-29a8-4397-944d-076842296501" Value="False" />
           </ComplexAttributes>
         </Extension>
-        <Extension Name="ViewPortXOnScene" Value="981.584404673058" />
-        <Extension Name="ViewPortYOnScene" Value="1217.58235728594" />
-        <Extension Name="TranslateXOnScene" Value="-637.709883440352" />
-        <Extension Name="TranslateYOnScene" Value="-334.50829412825" />
+        <Extension Name="TranslateYOnScene" Value="-186.203701604553" />
+        <Extension Name="ViewPortXOnScene" Value="1329.65206745775" />
+        <Extension Name="ViewPortYOnScene" Value="1649.33437303801" />
+        <Extension Name="TranslateXOnScene" Value="-1729.95879828509" />
       </ComposerExtensions>
       <BackgroundAsset Name="About Builders-Background" Uri="player://resources/b115086e-e327-4b32-86ef-c4e9001049ef">
         <Properties>
@@ -1724,32 +2132,6 @@ competencies, innovation & out-of- the-box ideation.]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:171]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
             <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
-          </Properties>
-        </Asset>
-        <Asset Name="next-icon (1)" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
-          <Attachments>
-            <EventTrigger EventType="Visual" EventName="Tapped">
-              <Navigate Type="Normal" Delay="value:0">
-                <ServiceValueParameter ParamName="Target" Value="player://visuals/krystal-realestate/Projects/" />
-                <Transition>
-                  <ZoomInTransition Duration="00:00:00.3000000" />
-                </Transition>
-              </Navigate>
-            </EventTrigger>
-          </Attachments>
-          <Properties>
-            <Property Type="Domain" Name="Source"><![CDATA[player://resources/b9bea62a-a953-44be-804c-03cb9d8c2004]]></Property>
-            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
-            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
-            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
-            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:1856]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:41]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:128]]></Property>
-            <Property Type="Container" Name="Height"><![CDATA[value:82]]></Property>
-            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
         </Asset>
         <Asset Name="Our Mission To creat" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
@@ -2254,266 +2636,6 @@ To create niche for ourself in the Real-Estate industry
             </Properties>
           </Asset>
         </Collection>
-        <Asset Name="MENU" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
-          <Attachments>
-            <EventTrigger EventType="Visual" EventName="Tapped">
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Home/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                <ServiceValueParameter ParamName="dX" Value="value:270" />
-                <ServiceValueParameter ParamName="dY" Value="value:108" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.3" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Home/" Type="Container" Name="SetOpacity" Delay="value:0.2">
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                <ServiceValueParameter ParamName="dOpacity" Value="value:1" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Home/" Type="Container" Name="Show" Delay="value:0.2">
-                <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
-                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Projects%201/" Type="Container" Name="Show" Delay="value:0.5">
-                <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
-                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Projects%201/" Type="Container" Name="SetOpacity" Delay="value:0.5">
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                <ServiceValueParameter ParamName="dOpacity" Value="value:1" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Projects%201/" Type="Container" Name="AnimatedMoveTo" Delay="value:0.5">
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                <ServiceValueParameter ParamName="dX" Value="value:276" />
-                <ServiceValueParameter ParamName="dY" Value="value:154" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.39999999999999997" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/MENU%201/" Type="Container" Name="Show" Delay="value:0">
-                <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
-                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/MENU/" Type="Container" Name="Hide" Delay="value:0">
-                <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
-                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-              </InvokeService>
-            </EventTrigger>
-          </Attachments>
-          <Properties>
-            <Property Type="Domain" Name="Text"><![CDATA[value:MENU]]></Property>
-            <Property Type="Visual" Name="Font">
-              <Typeface>
-                <Family>Segoe UI</Family>
-                <Stretch>normal</Stretch>
-                <Weight>400</Weight>
-                <Style>normal</Style>
-              </Typeface>
-            </Property>
-            <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
-            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
-            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:254]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:76]]></Property>
-            <Property Type="Container" Name="Height"><![CDATA[value:65]]></Property>
-            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
-          </Properties>
-        </Asset>
-        <Asset Name="MENU 1" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
-          <Attachments>
-            <EventTrigger EventType="Visual" EventName="Tapped">
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Home/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                <ServiceValueParameter ParamName="dX" Value="value:274" />
-                <ServiceValueParameter ParamName="dY" Value="value:36" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Home/" Type="Container" Name="SetOpacity" Delay="value:0.2">
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                <ServiceValueParameter ParamName="dOpacity" Value="value:0" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Home/" Type="Container" Name="Hide" Delay="value:0.2">
-                <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
-                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Projects%201/" Type="Container" Name="Hide" Delay="value:0.6">
-                <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
-                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Projects%201/" Type="Container" Name="SetOpacity" Delay="value:0.8">
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                <ServiceValueParameter ParamName="dOpacity" Value="value:0" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/Projects%201/" Type="Container" Name="AnimatedMoveTo" Delay="value:0.8">
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                <ServiceValueParameter ParamName="dX" Value="value:278" />
-                <ServiceValueParameter ParamName="dY" Value="value:48" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/MENU%201/" Type="Container" Name="Hide" Delay="value:0">
-                <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
-                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-              </InvokeService>
-              <InvokeService Target="player://visuals/krystal-realestate/About%20Builders/Layer%201/MENU/" Type="Container" Name="Show" Delay="value:0">
-                <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
-                <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
-                <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
-                <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
-                <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
-                <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
-                <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
-                <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-              </InvokeService>
-            </EventTrigger>
-          </Attachments>
-          <Properties>
-            <Property Type="Domain" Name="Text"><![CDATA[value:MENU]]></Property>
-            <Property Type="Visual" Name="Font">
-              <Typeface>
-                <Family>Segoe UI</Family>
-                <Stretch>normal</Stretch>
-                <Weight>400</Weight>
-                <Style>normal</Style>
-              </Typeface>
-            </Property>
-            <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
-            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
-            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:254]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:76]]></Property>
-            <Property Type="Container" Name="Height"><![CDATA[value:65]]></Property>
-            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
-          </Properties>
-        </Asset>
-        <Asset Name="Home" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
-          <Properties>
-            <Property Type="Domain" Name="Text"><![CDATA[value:Home]]></Property>
-            <Property Type="Visual" Name="Font">
-              <Typeface>
-                <Family>Segoe UI</Family>
-                <Stretch>normal</Stretch>
-                <Weight>400</Weight>
-                <Style>normal</Style>
-              </Typeface>
-            </Property>
-            <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
-            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
-            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
-            <Property Type="Container" Name="Opacity"><![CDATA[value:0]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:256]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:73]]></Property>
-            <Property Type="Container" Name="Height"><![CDATA[value:65]]></Property>
-            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
-          </Properties>
-        </Asset>
-        <Asset Name="Projects 1" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
-          <Properties>
-            <Property Type="Domain" Name="Text"><![CDATA[value:Projects]]></Property>
-            <Property Type="Visual" Name="Font">
-              <Typeface>
-                <Family>Segoe UI</Family>
-                <Stretch>normal</Stretch>
-                <Weight>400</Weight>
-                <Style>normal</Style>
-              </Typeface>
-            </Property>
-            <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
-            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
-            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
-            <Property Type="Container" Name="Opacity"><![CDATA[value:0]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:254]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:76]]></Property>
-            <Property Type="Container" Name="Height"><![CDATA[value:65]]></Property>
-            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
-          </Properties>
-        </Asset>
       </Layer>
     </Space>
     <Space Name="Contactus" AutoReset="true" BackgroundColor="#FF000000">
@@ -3096,10 +3218,21 @@ To create niche for ourself in the Real-Estate industry
             <Attribute Key="32a81565-d4d9-4d28-8aa7-77ac398e528e" Value="False" />
           </ComplexAttributes>
         </Extension>
-        <Extension Name="TranslateXOnScene" Value="-1115.79469512963" />
         <Extension Name="TranslateYOnScene" Value="-480.833336458092" />
         <Extension Name="ViewPortXOnScene" Value="1708.49935676756" />
         <Extension Name="ViewPortYOnScene" Value="2119.26622339466" />
+        <Extension Name="TranslateXOnScene" Value="-752.284193689723" />
+        <Extension Name="GuideLines" Value="">
+          <ComplexAttributes>
+            <Attribute Key="AreVisible" Value="True" />
+            <Attribute Key="GuideLinesColor" Value="#FFD74AE6" />
+            <Attribute Key="HorizontalLines" Value="">
+              <ComplexAttributes>
+                <Attribute Key="1007.92356354596" Value="" />
+              </ComplexAttributes>
+            </Attribute>
+          </ComplexAttributes>
+        </Extension>
       </ComposerExtensions>
       <Properties>
         <Property Type="Visual" Name="BackgroundEffects">
@@ -3170,12 +3303,12 @@ To create niche for ourself in the Real-Estate industry
             <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2C2C2C]]></Property>
             <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
             <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
             <Property Type="Container" Name="X"><![CDATA[value:165]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:176]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:239]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:84]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
-            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
           </Properties>
         </Asset>
         <Asset Name="Video" Visual="Button" Style="Simple button" Container="Static" Domain="value:VisibleTrigger">
@@ -3313,7 +3446,7 @@ To create niche for ourself in the Real-Estate industry
         </Asset>
         <Collection Name="Slide Show" Visual="Slide show" Style="" Container="Static" ContainerStyle="">
           <ComposerExtensions>
-            <Extension Name="IsExpanded" Value="False" />
+            <Extension Name="IsExpanded" Value="True" />
             <Extension Name="IsExpandedInBindingViews" Value="True" />
             <Extension Name="IsLocked" Value="True" />
           </ComposerExtensions>
@@ -5606,7 +5739,7 @@ To create niche for ourself in the Real-Estate industry
             <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
           </Properties>
         </Asset>
-        <Asset Name="3D Model" Visual="DefaultHtml3DModel" Style="" Container="Pin" ContainerStyle="" Domain="value:3DHtmlModel">
+        <Asset Name="3D Model" Visual="DefaultHtml3DModel" Style="" Container="Static" ContainerStyle="" Domain="value:3DHtmlModel">
           <Properties>
             <Property Type="Domain" Name="Source"><![CDATA[player://resources/497cec49-473b-4af8-8636-4a0a1b155b60]]></Property>
             <Property Type="Visual" Name="XRotation"><![CDATA[value:0]]></Property>
@@ -5621,12 +5754,12 @@ To create niche for ourself in the Real-Estate industry
             <Property Type="Visual" Name="MeshXRotation"><![CDATA[value:rotation0]]></Property>
             <Property Type="Visual" Name="MeshYRotation"><![CDATA[value:rotation0]]></Property>
             <Property Type="Visual" Name="MeshZRotation"><![CDATA[value:rotation0]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:1156]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:402]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:1082]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:410]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:1120]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:819]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
-            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
           </Properties>
         </Asset>
       </Layer>
@@ -6735,7 +6868,7 @@ To create niche for ourself in the Real-Estate industry
         <Tags>icon</Tags>
       </Infos>
     </Resource>
-    <Resource Key="d5ed78d8-89f6-4596-9f35-2786a02791de" Type="snapshot" Length="485658" LastModificationDate="2018-09-08T11:06:18.1883766Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
+    <Resource Key="d5ed78d8-89f6-4596-9f35-2786a02791de" Type="snapshot" Length="483265" LastModificationDate="2018-09-14T11:15:35.7733776Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
     <Resource Key="972bbcce-94c9-40be-a427-bc26b241b37e" Type="uri" Length="766234" LastModificationDate="2018-09-02T22:21:12Z" DefaultValue="player://data/Images/banner4.jpg" />
     <Resource Key="75386d1f-1e7e-44fa-a6be-42e572549064" Type="uri" Length="17796" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/skyila-logo-1-280x300.png" />
     <Resource Key="9c7572d7-cf17-4cdd-8dc2-eaddffb697ec" Type="uri" Length="17955" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/lapaloma-logo-300x207.png" />
@@ -6743,84 +6876,84 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="b942cf08-4b7f-49e6-9c67-d8672e3ccedb" Type="uri" Length="3575" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/apila.png" />
     <Resource Key="021a5990-35c8-422f-ac94-f4df9dbc1c84" Type="font" DefaultValue="value:Segoe UI">
       <Dependencies>
-        <Dependency URI="player://data/Contents/SEGOEUIL.iff" Length="864532" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGOEUIL.iff" Length="864532" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>300</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUILI.iff" Length="439924" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGUILI.iff" Length="439924" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>300</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUISL.iff" Length="802664" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGOEUISL.iff" Length="802664" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>350</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUISLI.iff" Length="447304" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGUISLI.iff" Length="447304" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>350</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUI.iff" Length="910308" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGOEUI.iff" Length="910308" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>400</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUII.iff" Length="508344" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGOEUII.iff" Length="508344" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>400</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUISB.iff" Length="925984" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGUISB.iff" Length="925984" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>600</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUISBI.iff" Length="437940" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGUISBI.iff" Length="437940" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>600</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUIB.iff" Length="898564" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGOEUIB.iff" Length="898564" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>700</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGOEUIZ.iff" Length="522076" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGOEUIZ.iff" Length="522076" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>700</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUIBL.iff" Length="323400" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGUIBL.iff" Length="323400" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>900</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/SEGUIBLI.iff" Length="350844" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/SEGUIBLI.iff" Length="350844" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>900</FontWeight>
@@ -6838,7 +6971,7 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="e5f3d495-dd01-497b-8c78-3a73ca4525a1" Type="uri" Length="3971" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/riveredge.jpg" />
     <Resource Key="5a9313eb-d1b1-476a-be3d-cc5c111934be" Type="uri" Length="4629" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Skyla.jpg" />
     <Resource Key="b4fce1ac-2877-484c-ae81-e2e76d1ecbea" Type="uri" Length="5256" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Rvera.jpg" />
-    <Resource Key="7db64681-ecea-4ea4-9346-6ad2746d3d10" Type="snapshot" Length="485658" LastModificationDate="2018-09-08T11:06:18.1883766Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/4349f9c.png" />
+    <Resource Key="7db64681-ecea-4ea4-9346-6ad2746d3d10" Type="snapshot" Length="483265" LastModificationDate="2018-09-14T11:15:35.7733776Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/4349f9c.png" />
     <Resource Key="flat-d69528ec-7aa8-477b-8e31-fa506e1a854b" Type="uri" Length="1184" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-orange-home-released.png" />
     <Resource Key="flat-67c6522c-5d4a-4f83-bc33-ac2601b8e347" Type="uri" Length="1192" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-orange-home-pressed.png" />
     <Resource Key="flat-82f01134-b863-49bf-8330-737e8c1bdce0" Type="uri" Length="1210" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Flat-blue-home-released.png" />
@@ -6962,7 +7095,7 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="d6f7ae01-7080-476f-9601-def177fe9a83" Type="uri" Length="4215" LastModificationDate="2018-09-02T22:21:12Z" DefaultValue="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd">
       <Dependencies>
         <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/excel_icon.png" Length="425" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd" Length="4215" LastModificationDate="2018-09-02T22:21:12Z" />
+        <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.ifd" Length="4215" LastModificationDate="2018-09-03T03:51:12+05:30" />
         <Dependency URI="player://data/InterfaceAssets/UserForm_xlsx/UserForm.xlsx" Length="9260" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" />
       </Dependencies>
     </Resource>
@@ -6978,35 +7111,35 @@ To create niche for ourself in the Real-Estate industry
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Result.js" Length="365" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode-DA.dax" Length="17586" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode-DA.png" Length="25903" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd" Length="7587" LastModificationDate="2018-09-02T22:21:12Z" />
+        <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.ifd" Length="7587" LastModificationDate="2018-09-03T03:51:12+05:30" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/ReverseGeocode.js" Length="4615" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" />
         <Dependency URI="player://data/InterfaceAssets/ReverseGeocode/Data/Images/icon_DA-map.png" Length="1391" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" />
       </Dependencies>
     </Resource>
     <Resource Key="028c6a18-5e13-4f7f-91a6-2db392c3dee6" Type="font" DefaultValue="value:Verdana">
       <Dependencies>
-        <Dependency URI="player://data/Contents/VERDANA.iff" Length="240456" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/VERDANA.iff" Length="240456" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>400</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/VERDANAI.iff" Length="220296" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/VERDANAI.iff" Length="220296" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>400</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/VERDANAB.iff" Length="208456" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/VERDANAB.iff" Length="208456" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>700</FontWeight>
             <FontStretch>normal</FontStretch>
           </Infos>
         </Dependency>
-        <Dependency URI="player://data/Contents/VERDANAZ.iff" Length="226848" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/VERDANAZ.iff" Length="226848" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>italic</FontStyle>
             <FontWeight>700</FontWeight>
@@ -7017,7 +7150,7 @@ To create niche for ourself in the Real-Estate industry
     </Resource>
     <Resource Key="688a7f04-9468-4de9-b1c5-67ec76088d15" Type="snapshot" Length="324474" LastModificationDate="2018-08-31T09:12:24.0998755Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/3ea6a8b1.png" />
     <Resource Key="bb04f707-e738-442e-b4aa-d8822414de0a" Type="snapshot" Length="610380" LastModificationDate="2018-08-31T11:12:52.4143429Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/4b4d46cf.png" />
-    <Resource Key="559c0556-2810-4489-ba7a-2d9a6a61e73f" Type="snapshot" Length="317149" LastModificationDate="2018-09-10T12:52:23.2888382Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/9984dfb3.png" />
+    <Resource Key="559c0556-2810-4489-ba7a-2d9a6a61e73f" Type="snapshot" Length="311871" LastModificationDate="2018-09-14T11:15:57.0455781Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/9984dfb3.png" />
     <Resource Key="b4bdbbf9-cf16-45fd-83da-bb5e15f0f8cd" Type="snapshot" Length="185236" LastModificationDate="2018-09-01T07:01:25.6506488Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/c65d97d6.png" />
     <Resource Key="4ea5046e-e9a5-48f3-b55f-c08d43e6d008" Type="uri" Length="3645" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/background_white_waves.jpg" />
     <Resource Key="390e3a05-e174-47ec-8e59-1fe00be766ff" Type="uri" Length="8380" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/background_balls.jpg" />
@@ -7059,7 +7192,7 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="47f6faf1-ce2f-4981-9405-ee022dbe6dfc" Type="uri" Length="14666" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/testmonials3.png" />
     <Resource Key="b41dd15b-61d5-4f49-b361-dd70b9fc280d" Type="font" DefaultValue="value:Cambria Math">
       <Dependencies>
-        <Dependency URI="player://data/Contents/CAMBRIA.iffc" Length="1622732" LastModificationDate="2018-09-02T22:21:12Z">
+        <Dependency URI="player://data/Contents/CAMBRIA.iffc" Length="1622732" LastModificationDate="2018-09-03T03:51:12+05:30">
           <Infos>
             <FontStyle>normal</FontStyle>
             <FontWeight>400</FontWeight>
@@ -7075,8 +7208,8 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="81e089f2-a803-4740-8ea0-4d01fd3d5bfa" Type="uri" Length="9725" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/ourprojects4.jpg" />
     <Resource Key="4edf8891-a83e-4da7-ac58-8d3d092d1115" Type="uri" Length="5157" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/arrow2.jpg" />
     <Resource Key="71fbf355-7a06-4829-a3d4-408df6cb32ad" Type="uri" Length="3869" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/next.jpg" />
-    <Resource Key="ea458b8f-d6bc-4aa1-aa6d-dd933d4ed230" Type="snapshot" Length="786668" LastModificationDate="2018-09-10T10:16:14.249824Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/9048be8c.png" />
-    <Resource Key="8652e51f-9b25-4889-9b4e-3dea45df5619" Type="snapshot" Length="202599" LastModificationDate="2018-09-10T13:04:20.6187553Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/89130c67.png" />
+    <Resource Key="ea458b8f-d6bc-4aa1-aa6d-dd933d4ed230" Type="snapshot" Length="785890" LastModificationDate="2018-09-14T11:05:59.7305Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/9048be8c.png" />
+    <Resource Key="8652e51f-9b25-4889-9b4e-3dea45df5619" Type="snapshot" Length="180477" LastModificationDate="2018-09-14T10:59:26.2113827Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/89130c67.png" />
     <Resource Key="0365d83a-fb69-49ac-80a0-24ffff59bf81" Type="snapshot" Length="601822" LastModificationDate="2018-08-31T11:02:28.0656007Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/5c4680a9.png" />
     <Resource Key="62117089-0370-40b0-8510-7bd68fd7a739" Type="snapshot" Length="332755" LastModificationDate="2018-08-31T11:02:09.4665369Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/697f31cc.png" />
     <Resource Key="b863a274-5a4b-4f1f-8727-0d698e1c2ece" Type="snapshot" Length="329675" LastModificationDate="2018-08-31T11:18:53.5409981Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/ce61f59d.png" />
@@ -7100,9 +7233,7 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="5db8114d-863d-4cb4-a233-b6b80630cfbb" Type="uri" Length="15841" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/home-icon.png">
       <Alternate Value="player://data/Generated/5fbba8f13d08f600e0a443d5534e1021.png" Width="82" Height="82" Length="9332" LastModificationDate="2018-09-08T05:27:04.638443Z" Archive="SmallFiles.zip" />
     </Resource>
-    <Resource Key="b9bea62a-a953-44be-804c-03cb9d8c2004" Type="uri" Length="13849" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/next-icon%20(1).png">
-      <Alternate Value="player://data/Generated/b634ff626535ebe6ad0b1dfe45986d88.png" Width="82" Height="82" Length="9243" LastModificationDate="2018-09-08T05:27:04.8335817Z" Archive="SmallFiles.zip" />
-    </Resource>
+    <Resource Key="b9bea62a-a953-44be-804c-03cb9d8c2004" Type="uri" Length="13849" LastModificationDate="2018-09-02T22:21:12Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/next-icon%20(1).png" />
     <Resource Key="02885809-f8ff-4792-9441-7c92b74f611f" Type="uri" Length="830639" LastModificationDate="2018-09-02T22:21:12Z" DefaultValue="player://data/Images/Projects%20main.jpg" />
     <Resource Key="d948a306-a266-4182-82e8-167534e06ef2" Type="uri" Length="716397" LastModificationDate="2018-09-02T22:21:12Z" DefaultValue="player://data/Images/Projects2.jpg" />
     <Resource Key="2cb54bd1-2dfe-4034-bca3-b5a4dd2abe5a" Type="uri" Length="720661" LastModificationDate="2018-09-02T22:21:12Z" DefaultValue="player://data/Images/Projects3.jpg" />
@@ -7168,12 +7299,30 @@ To create niche for ourself in the Real-Estate industry
     <Resource Key="5eb33332-899a-413a-bb33-469a39113c7d" Type="uri" Length="1198505" LastModificationDate="2018-09-08T08:39:00.7000849Z" DefaultValue="player://data/Images/11p.png" />
     <Resource Key="1e3a8fb8-0d2a-4c2a-a0ee-e35edfe52226" Type="uri" Length="23426" LastModificationDate="2018-09-08T10:29:04.2211938Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Projects111.png" />
     <Resource Key="17430d2a-e0d6-428a-a7df-fc0cfe7eca2b" Type="uri" Length="3297198" LastModificationDate="2018-09-08T10:34:50.657951Z" DefaultValue="player://data/Images/Projects222.png" />
-    <Resource Key="a78235ed-c95d-48ba-abc2-34aa8b5061b7" Type="uri" Length="855330" LastModificationDate="2004-08-08T10:54:24Z" DefaultValue="player://data/Object3D/%E6%A8%A1%E5%9E%8B--3DS/%E6%A8%A1%E5%9E%8B--3DS.3DS" />
-    <Resource Key="c914fc23-6d21-4448-a055-62333299b143" Type="uri" Length="337223" LastModificationDate="2010-02-15T10:44:54Z" DefaultValue="player://data/Object3D/House%20N150210/House%20N150210.3DS" />
+    <Resource Key="a78235ed-c95d-48ba-abc2-34aa8b5061b7" Type="uri" Length="855330" LastModificationDate="2004-08-08T10:54:24Z" DefaultValue="player://data/Object3D/%E6%A8%A1%E5%9E%8B--3DS/%E6%A8%A1%E5%9E%8B--3DS.3DS">
+      <Dependencies>
+        <Dependency URI="player://data/Object3D/%E6%A8%A1%E5%9E%8B--3DS/%E6%A8%A1%E5%9E%8B--3DS.3DS" Length="855330" LastModificationDate="2004-08-08T10:54:24Z" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="c914fc23-6d21-4448-a055-62333299b143" Type="uri" Length="337223" LastModificationDate="2010-02-15T10:44:54Z" DefaultValue="player://data/Object3D/House%20N150210/House%20N150210.3DS">
+      <Dependencies>
+        <Dependency URI="player://data/Object3D/House N150210/House N150210.3DS" Length="337223" LastModificationDate="2010-02-15T10:44:54Z" />
+      </Dependencies>
+    </Resource>
     <Resource Key="497cec49-473b-4af8-8636-4a0a1b155b60" Type="uri" Length="2359162" LastModificationDate="2017-09-18T17:48:13.6910232Z" DefaultValue="player://data/Object3D/building_04/building_04.obj">
       <Dependencies>
         <Dependency URI="player://data/Object3D/building_04/building_04.mtl" Length="2583" LastModificationDate="2017-09-18T17:48:13.6920232Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/Object3D/building_04/building_04.obj" Length="2359162" LastModificationDate="2017-09-18T17:48:13.6910232Z" />
       </Dependencies>
+    </Resource>
+    <Resource Key="02733696-3d73-4ac3-a66d-7b819d219772" Type="uri" Length="9655" LastModificationDate="2018-09-14T10:38:33.703513Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Menu.png">
+      <Alternate Value="player://data/Generated/5ac5a9c4d701c1ce3ae569f07c7faa61.png" Width="242" Height="68" Length="5687" LastModificationDate="2018-09-14T11:15:57.4118432Z" Archive="SmallFiles.zip" />
+    </Resource>
+    <Resource Key="dd2bb399-ea2f-414a-a9aa-75e36ff21f39" Type="uri" Length="13429" LastModificationDate="2018-09-14T10:42:01.2050234Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Projects.png">
+      <Alternate Value="player://data/Generated/b9d43dde396cfe19a91228f167b419e7.png" Width="224" Height="63" Length="7487" LastModificationDate="2018-09-14T11:15:57.3708103Z" Archive="SmallFiles.zip" />
+    </Resource>
+    <Resource Key="4d89e8bf-99f8-4dd9-bd0c-d4edca00cbb3" Type="uri" Length="12360" LastModificationDate="2018-09-14T10:41:40.7079413Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Construction.png">
+      <Alternate Value="player://data/Generated/efd4f6284968843da332a3f4379df226.png" Width="224" Height="63" Length="7558" LastModificationDate="2018-09-14T11:15:57.3948278Z" Archive="SmallFiles.zip" />
     </Resource>
   </Resources>
   <Sequence>
@@ -7198,18 +7347,18 @@ To create niche for ourself in the Real-Estate industry
           <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
         </Transforms>
         <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <DigestValue>Uu5oAQH6kiuHMwfEi1ZkfJMwdIg=</DigestValue>
+        <DigestValue>oQw4x4R+CcmokI7fckNy5JLOrFU=</DigestValue>
       </Reference>
     </SignedInfo>
-    <SignatureValue>eqKebCViTe2MK7OMCF4Xuf2jpTVvVgGkQzRKMNLSuh7xBdxlvuxUpLDBfUEaWaMUmRHDWj4ut57wHtoiOeypf4cxhPTUtDpWQVnz4H09hX6QmoX54Ln4HHqWzkDx4Sc4O6vOI6YicoQg+8Y682FtIfRVBIhwk69JCw+12dWVnhHbhkrpDhVC9D6+Mk+wbMrCKbJh6K6Rg2IuVW2Sa1cZR+0cXNuh/piV5k+N4vw+BbYIAxUPYQBKbbGJZtAWBHrH7GJZtpZqCKeSyZ+Yux3LiEUsUlXfkwrLzn6YX92OBTSKjSl4OXQ+9vep2DPzUOu5SJWzFyHLAe8JCElxt4goOQ==</SignatureValue>
+    <SignatureValue>jyMA6DJWosbRnKBs/7D7Z844ef9npoX2kKhHwvcl9vU0qOk67wopJI+UvcJz1b7N5x/Ong5ZoHqt13Y3ZlExN8t9tDbbhzgC7fFfXFN+sTpK3UjhBWxU3115NalCEs0HOHGa1m71QOHVOHkKUH18FL9F1ltsUz5wmNWO6xjZiyvZiq1wtBIjfjd0UlP/1r7kzKwLgGSQOfjO/baCNoGwzDsHJzGNK6+3NtZ34aGVME2YIZekvAsf32clEPQ8YZl4puaSu9MnT+5uGWvmqLYpp2rHLN2Bu6lHid3QUbAtvGc23QWN7TE2qWz4G0+U7vWOTaSSuU1HF5pJh0DYuvDU5A==</SignatureValue>
     <Object Id="private" MimeType="text/xml" Encoding="utf-8">
       <SignatureData xmlns="">
         <EditonLevel>FREE</EditonLevel>
         <HostName>TWVEN3-LAP-44</HostName>
-        <Data><![CDATA[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]]></Data>
+        <Data><![CDATA[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]]></Data>
         <Crypto>
-          <IV><![CDATA[Ja9u/lMxfdKq51g6YqNs9kTWtdz7cuezT26qnkN5J/XlEogmvjDUf/eks2q2aYr+zi4spm3D9vml/sQUJrLgV5XPH3QMjaPFKkbcVcy1f5VDcRlnY/MU3gNzNTUQG3CSByTsVvaKbjA9P/KXzpIJbpwvdjV/A3ibHBqqVl01dh2I11DoCLraVqzAjXHQyaILdMz1xHDizQ1qJjk14Sdnd2cZr9QHAHcdiwTitwQDxibV9vbiQfcHZGl/OOZydig70PB9++w130Lik/N3QGiu7zn1lSFVYldVgMESL2w5SX8OurHwMkpinuA8SR6juOg5gYCKeTppbMA91+52WZIqAg==]]></IV>
-          <Key><![CDATA[Q/NkCkFWaSuxaSqI5HTP/LVFQMtwRx36M/c4v/4QhHN3CL6vjuerQwqbxUkACCAvirzEXAqccGLcJWUchdnig535PP69AWxHj/eezM9LfdWPWf5vtGWgjAYbYRObc8qd4ZEsqVALR7JoR/Eo1XajGo/ncOJlcCwcuDzQF1cpSf1ahlGSWh41sVHuqMCnnJJNdmaI9xI5Od5QTclZx5i10aMnLtprmKIoXCKSXJhA61Z/Uy4A6ItkJtDMAo+tF71cat2ks4uhOeSFEvIyheLua6U/TxZE9K3efhVB7sJ9Tz1rvvXxhtorVVYvBMK4MlZAin04cUBE+8PksjOeurubyg==]]></Key>
+          <IV><![CDATA[eqCnja7y21x3CV+oKnVlevpSHl2zvLCnsqYVNZs0170cvV0znNEHHbbRYO41EYVdXTzeQbnmvkrQJWJgO53MDDppeoSsHnKDVwM4wrBd29qe/mo2BHvv/+NkTMrn5VtgwUTlDaxoNh6QVoGGcuiMOtMcZHuuFahip2Z5O2Aq6TXGfjvZBzBXn4MdCNPWcXh6xlYUc9Xefq1txua6mbWp0uqeg0k9VLQHtkme9n/gcUEFMj5C3Cd+nnrb09jPNMUoxmhk3qTw0DEnous2voBGNDtqHMGE2vRWtalfr2lAJZSCDm/2aAg6WFZRuMqa1wumhbJI4uKkc1Hyxr4N35fjSA==]]></IV>
+          <Key><![CDATA[k3bjx394Fd+DaBoQTMSba6v/ENLSpCrqan4MXrexQi9q/M+IwPd9o3fxnQc33YVpA5AoLv1ZRb9ItKZuh1dRD9D8r0OZNemQglsj/flAbG+gaI3hOrcWAnXAzGU8BunW4DhYGtN3hNvtdmWClYph5b/D92JMc+ow8OEQjI+kd5mJ8XItLkegUrm+P5YP/OhQhsCBPuPADIWKaFz7JIsH34/ld+MO10yYh1MXyWb8d9dJIuP3R8Xde6BPRJRFWqJ8frXprMxix+a80KfzbvdMAKfQEGFkOGystHdh8+JNLL/x3lIN7xCctgzI7Svft4qoeHU/soObAsbFkdw/aoL5pQ==]]></Key>
         </Crypto>
       </SignatureData>
     </Object>
